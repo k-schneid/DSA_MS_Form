@@ -1,0 +1,19 @@
+// JScript source code
+
+jQuery(document).ready(function(){
+        selected_count = jQuery('#at-nav1 > ul > li.at-selected').size();
+        if(selected_count > 1)
+        {
+            jQuery('#at-nav1 > ul > li.at-selected').removeClass("at-selected");
+            jQuery('#at-nav1 > ul > li').each(function(i){
+                if(document.referrer.toUpperCase().indexOf(jQuery(this).text().toUpperCase() + "SUMMARY.ASPX")!= -1)
+                {
+                    jQuery(this).addClass("at-selected");
+                }
+		else if(document.referrer.toUpperCase().indexOf(jQuery(this).text().toUpperCase() + "RESOURCES.ASPX")!= -1)
+		{
+		    jQuery(this).addClass("at-selected");
+		}
+            });
+        }
+    });

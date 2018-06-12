@@ -1,0 +1,847 @@
+@charset "utf-8";
+/* GENERAL ITEMS 
+-------------------------------------------------------------------- */
+.sectiontitle{padding-bottom:3px; margin-bottom:3px;border-bottom:1px solid #ccc;}
+*html .at-g,*html .at-u{height:1%;}
+html > body .at-g,html > body .at-u{overflow:hidden;}
+.at-first{float:left;width:49.1%;}
+a.right{margin-right:10px;}
+.displaynone {display:none;}
+.section-container .right{padding:3px;}
+/*.section-container .right{margin-top:6px;} removed margin*/
+*html .section-container{height:1%;}
+html > body .section-container{overflow:hidden;}
+.skipnav{display:none;}
+/* LIST ITEMS
+-------------------------------------------------------------------- */
+*html ul.v-list li{clear:both;}
+ul.v-list,ul.h-list,ul.p-list{padding:0px;margin:0px;}
+ul.v-list li,ul.h-list li{background-image:url(../images/ns/iconlist1.png);background-color: transparent;background-repeat:no-repeat;list-style:none;}
+ul.h-list li a,ul.h-list li{line-height:1.6em;}
+/*ul.v-list li a,ul.v-list li{line-height:1.6em;}*/
+ul.v-list li{margin-bottom:8px;}
+ul.h-list li{display: inline;padding:3px 5px 3px 18px;margin-right:10px;}
+ul.v-list li{padding-left:20px;font-size:100%;}
+/* Horizontal List */
+ul.h-list li.first{}
+ul.h-list li.last{margin-right:0px;}
+/* Vertical List */
+ul.v-list li.first{}
+ul.v-list li.last{}
+.v-list li.image{padding-left: 0px;}
+/* Paging List */
+ul.p-list{margin:5px 5px 0px 5px;}
+ul.p-list li{display: inline;padding:3px 0px 3px 0px;}
+ul.p-list li.first{}
+ul.p-list li.last{}
+ul.p-list li a,ul.p-list li a:visited{text-decoration:none;}
+ul.p-list li a{padding:2px 6px; border:1px solid #c3cfdc; display:inline;}
+ul.p-list li a:hover{background-color:#e1eaf4;}
+ul.p-list li.active a,ul.p-list li.active a:hover{background-color:transparent; font-weight:bold;border:none;}
+/* Fliter List */
+ul.f-list{margin-top:5px; margin-bottom:5px;margin-right:0px; margin-left:0px;}
+ul.f-list li{background-image:none;padding:3px 2px 3px 0px;margin:0px 0px 0px 0px;}
+ul.f-list li a{margin-left:-6px;}
+div.filterlist ul.h-list{margin-top:5px; margin-bottom:5px;margin-right:0px; margin-left:0px;}
+div.filterlist ul.h-list li{background-image:none;padding:3px 2px 3px 0px;margin:0px 0px 0px 0px;}
+div.filterlist ul.h-list li a{margin-left:-6px;}
+/* Horizontal Lines */
+ul.h-line{margin:0px;}
+ul.h-line li{border-bottom:1px solid #ccc; margin-bottom:3px;padding:2px;}
+/* Vertical Lines */
+ul.v-line li{border-left:solid 1px #acc2e2;padding:0px;float:left; margin-right:0px;}
+ul.v-line li.first{border-left:none;}
+ul.v-line li.last{margin-right:0px;}
+ul.v-line li a,ul.v-line li a:visited{padding:0px 5px;text-decoration:none;display:inline-block;}
+ul.v-line li a.selected,ul.v-line li a.selected:visited{padding:0px 5px;background-color:#f1f6fc;}
+ul.v-line li a:hover{text-decoration:underline;}
+/* List Divider */
+ul.listdivider, ul.v-list li.listdivider, ul.h-list li.listdivider{border-top:dotted 1px #ccc;margin-top:3px;padding-top:3px;}
+/* List with no icons */
+ul.no-bullet li{background:none;}
+.v-list li.no-bullet, .h-list li.no-bullet{background-image:none;}
+/* List with selected list item */
+ul li.localnavselected {background:#fff url(../images/ns/gradient_vGrid.png) repeat-y -95px 0px;border:solid 1px #bacbde;padding:0px;margin-bottom:3px;}
+li.localnavselected a {color:#000;font-weight:normal;display:block; text-decoration:none;padding:3px;padding-left:20px;}
+li.localnavselected a:hover {text-decoration:none;}
+/* Horizontal Menu Icon List */
+*html ul.iconlist{height:1%;padding:3px 0px;}
+html > body ul.iconlist{overflow:hidden; padding-left:10px;}
+ul.iconlist{margin:3px 0;padding:3px 0px;}
+ul.iconlist  li{padding:0px; margin:0px; list-style:none;}
+ul.iconlist a{text-decoration:underline; margin:0px 6px;}
+ul.iconlist a:hover{text-decoration:underline;}
+/* Menu List Background */
+.menulist{background-color:#edf5ff;clear:both;}
+/* Bulleted Icon List Styles*/
+.listgrid1 li, .v-list li.listgrid1, .h-list li.listgrid1{background-position: 0px 0px;}	/* blue arrow */	 
+.listgrid2 li, .v-list li.listgrid2, .h-list li.listgrid2{background-position: 0px -140px;} /* orange triangle */
+.listgrid3 li, .v-list li.listgrid3, .h-list li.listgrid3{background-position: 0px -280px;} /* small line */
+.listgrid5 li, .v-list li.listgrid5, .h-list li.listgrid5{background-position: 0px -560px;} /* grey up arrow */
+.listgrid6 li, .v-list li.listgrid6, .h-list li.listgrid6{background-position: 0px -700px;} /* grey down arrow */
+.listgrid7 li, .v-list li.listgrid7, .h-list li.listgrid7{background-position: 0px -840px;} /* blue right */
+.listgrid8 li, .v-list li.listgrid8, .h-list li.listgrid8{background-position: 0px -980px;} /* blue down */
+.listgrid9 li, .v-list li.listgrid9, .h-list li.listgrid9{background-position: 0px -1120px;} /* orange triangle right */
+.listgrid10 li, .v-list li.listgrid10, .h-list li.listgrid10{background-position: 0px -1260px;} /* orange triangle left */
+.listgrid11 li, .v-list li.listgrid11, .h-list li.listgrid11{background-position: 0px -1400px;} /* status pending - orange */
+.listgrid12 li, .v-list li.listgrid12, .h-list li.listgrid12{background-position: 0px -1542px;} /* status red X */
+.listgrid13 li, .v-list li.listgrid13, .h-list li.listgrid13{background-position: 0px -1680px;} /* status green */
+.listgrid14 li, .v-list li.listgrid14, .h-list li.listgrid14{background-position: 0px -2100px;} /* status green */
+.listgrid15 li, .v-list li.listgrid15, .h-list li.listgrid15{background-position: 0px -2228px;} /* word */
+.listgrid16 li, .v-list li.listgrid16, .h-list li.listgrid16{background-position: 0px -2347px;} /* pdf */
+.listgrid17 li, .v-list li.listgrid17, .h-list li.listgrid17{background-position: 0px -2468px;} /* powerpoint */
+.listgrid19 li, .v-list li.listgrid19, .h-list li.listgrid19{background-position: 0px -2588px;} /* excel */
+.listgrid20 li, .v-list li.listgrid20, .h-list li.listgrid20{background-position: 0px -2708px;} /* project */
+.listgrid21 li, .v-list li.listgrid21, .h-list li.listgrid21{background-position: 0px -2970px;} /* warning */
+.listgrid22 li, .v-list li.listgrid22, .h-list li.listgrid22{background-position: 0px -2830px;} /* ebook */  
+.listgrid18 li, .v-list li.listgrid18, .h-list li.listgrid18,.listgrid4 li, .v-list li.listgrid4, .h-list li.listgrid4 {background-position: 0px -3110px;} /* blue box */
+/*  PANELS
+-------------------------------------------------------------------- */
+/* Default Gray Round Panels */
+.at-panel {border: 0 none; margin:10px 0px;}
+/*.at-panel a{text-decoration:none;}*/
+.at-panel .hd{border-bottom:1px solid #ccc; background:#f4f4f5 url(../images/ns/mod-grid.png) repeat-x;background-position:left -635px;font-weight:bold;color:#000000; }
+*html .at-panel .hd{height:1%;}
+html > body .at-panel .hd{overflow:hidden;}
+.at-panel .hd .title, .at-panel .hd .panel-right{color:#000;}
+.at-panelcontainer {border: 0 none;	border-right:1px solid #ccc;border-left:1px solid #ccc;margin:0px;padding:0px;}
+/*.at-panel .hd .panel-right{padding:3px;}*/
+.at-panel .hd .title{padding:0px 3px 3px 8px;}
+.at-panel .bd{padding:4px 4px 4px 4px;}
+.at-panel .ft{padding:0px 3px 4px 3px; overflow:hidden;}
+.at-panel .border-top,.at-panel .border-bottom,.courselist .border-top,.courselist .border-bottom {overflow:hidden;width:auto;height:9px;font-size:0;background:url(../images/ns/mod-grid.png) repeat-x;}
+.at-panel .border-top {margin-bottom: -4px;background-position:left -630px;}
+.at-panel .border-bottom {margin-top: -4px;background-position:left -729px;}
+.at-panel .edge-tl,.at-panel .edge-tr,.at-panel .edge-bl,.at-panel .edge-br{width: 9px;height: 9px;background:url(../images/ns/mod-grid.png);}
+.at-panel .edge-tl,.at-panel .edge-bl{float:left;}
+.at-panel .edge-tr,.at-panel .edge-br{float:right;position:relative; /*IE Fix | z-index*/}
+.at-panel .edge-tl {font-size:0;background-position:left -492px;}
+.at-panel .edge-tr {font-size:0;background-position:right -561px;}
+.at-panel .edge-bl {background-position:left -703px;}
+.at-panel .edge-br {background-position:right -716px;}
+.panel-right[class]{overflow:hidden;}
+*html .panel-right{height:1%;}
+.panel-right{float:right;white-space:nowrap;}
+.at-panel .hd .title{float:left;}
+.panel-links{white-space:nowrap;padding-right:10px;}
+.at-panel .collapse-icon span.icon, .at-panel .hd .expand-icon span.icon {margin-right:-3px;}
+.at-panel .hd .expand-icon{float:right;}
+.at-panel li a:hover{color:#0694df;}
+/* Gray Background Corners for Default Panel */
+.homecontainer .at-panel{background-color:#fff;}
+.homecontainer .at-panel .hd{border-bottom:1px solid #ccc; background-color:#f4f4f5;background-position:left -389px;}
+.homecontainer .at-panel .hd .title, .homecontainer .at-panel .panel-right{color:#000;}
+.homecontainer .at-panel .border-top {background-position:left -384px;}
+.homecontainer .at-panel .border-bottom {background-position:left -483px;}
+.homecontainer .at-panel .edge-tl {background-position:left -246px;}
+.homecontainer .at-panel .edge-tr {background-position:right -315px;}
+.homecontainer .at-panel .edge-bl {background-position:left -457px;}
+.homecontainer .at-panel .edge-br {background-position:right -470px;}
+.homecontainer .at-panel .at-panelcontainer{border-right:1px solid #ccc;border-left:1px solid #ccc;}
+/* Blue Gradient Panel */
+.navpanel .hd,.courselistpanel .hd,.forumlistpanel .hd,.gradebookpanel .hd,.universitylibpanel .hd,.ebookpanel .hd,.writingtoolspanel .hd,.paymentspanel .hd,.personalpanel .hd{border-bottom:1px solid #0a5481; background-color:#0a5481;background-position:left -143px;}
+.navpanel .hd .title,.navpanel .hd .panel-right,.courselistpanel .hd .title,.courselistpanel .hd .panel-right,.forumlistpanel .hd .title,.forumlistpanel .hd .panel-right,.gradebookpanel .hd .title,.gradebookpanel .hd .panel-right,.universitylibpanel .hd .title,.universitylibpanel .hd .panel-right,.ebookpanel .hd .title,.ebookpanel .hd .panel-right,.writingtoolspanel .hd .title,.writingtoolspanel .hd .panel-right,.paymentspanel .hd .title,.paymentspanel .hd .panel-right,.personalpanel .hd .title,.personalpanel .hd .panel-right{color:#fff;}
+.navpanel .border-top,.courselistpanel .border-top,.forumlistpanel .border-top,.gradebookpanel .border-top,.universitylibpanel .border-top,.ebookpanel .border-top,.writingtoolspanel .border-top,.paymentspanel .border-top,.personalpanel .border-top{background-position:left -138px;}
+.navpanel .border-bottom,.courselistpanel .border-bottom,.forumlistpanel .border-bottom,.gradebookpanel .border-bottom,.universitylibpanel .border-bottom,.ebookpanel .border-bottom,.writingtoolspanel .border-bottom,.paymentspanel .border-bottom,.personalpanel .border-bottom{background-position:left -237px;}
+.navpanel .edge-tl,.courselistpanel .edge-tl,.forumlistpanel .edge-tl,.gradebookpanel .edge-tl,.universitylibpanel .edge-tl,.ebookpanel .edge-tl,.writingtoolspanel .edge-tl,.paymentspanel .edge-tl,.personalpanel .edge-tl{background-position:left -0px;}
+.navpanel .edge-tr,.courselistpanel .edge-tr,.forumlistpanel .edge-tr,.gradebookpanel .edge-tr,.universitylibpanel .edge-tr,.ebookpanel .edge-tr,.writingtoolspanel .edge-tr,.paymentspanel .edge-tr,.personalpanel .edge-tr{background-position:right -69px;}
+.navpanel .edge-bl,.courselistpanel .edge-bl,.forumlistpanel .edge-bl,.gradebookpanel .edge-bl,.universitylibpanel .edge-bl,.ebookpanel .edge-bl,.writingtoolspanel .edge-bl,.paymentspanel .edge-bl,.personalpanel .edge-bl{background-position:left -211px;}
+.navpanel .edge-br,.courselistpanel .edge-br,.forumlistpanel .edge-br,.gradebookpanel .edge-br,.universitylibpanel .edge-br,.ebookpanel .edge-br,.writingtoolspanel .edge-br,.paymentspanel .edge-br,.personalpanel .edge-br{background-position:right -224px;}
+.navpanel .at-panelcontainer,.courselistpanel .at-panelcontainer,.forumlistpane .at-panelcontainerl,.gradebookpanel .at-panelcontainer,.universitylibpanel .at-panelcontainer,.ebookpanel .at-panelcontainer,.writingtoolspanel .at-panelcontainer,.paymentspanel .at-panelcontainer,.personalpanel .at-panelcontainer{border-right:1px solid #0a5481;border-left:1px solid #0a5481;}
+.navpanel .bd,.courselistpanel .bd,.forumlistpanel .bd,.gradebookpanel .bd,.universitylibpanel .bd,.ebookpanel .bd,.writingtoolspanel .bd,.paymentspanel .bd,.personalpanel .bd{background-image:url(../images/ns/leftnav_bkg.png); background-position:left 0px; background-color:#fff; background-repeat:repeat-x;}
+*html .navpanel .bd,*html .courselistpanel .bd,*html .forumlistpanel .bd,*html .gradebookpanel .bd,*html .universitylibpanel .bd,*html .ebookpanel .bd,*html .writingtoolspanel .bd,*html .paymentspanel .bd,*html .personalpanel .bd{height:75px;}
+html > body .navpanel .bd,html > body .courselistpanel .bd,html > body .forumlistpanel .bd,html > body .gradebookpanel .bd,html > body .universitylibpanel .bd,html > body .ebookpanel .bd,html > body .writingtoolspanel .bd,html > body .paymentspanel .bd,html > body .personalpanel .bd{min-height:75px;}
+.navpanel ul li.title,.courselistpanel ul li.title,.forumlistpanel ul li.title,.gradebookpanel ul li.title,.universitylibpanel ul li.title,.ebookpanel ul li.title,.writingtoolspanel ul li.title,.paymentspanel ul li.title,.personalpanel ul li.title,.gradebookpanel ul li.title{color:#064976;margin-top:9px; background-image:none; font-weight:bold;margin-left:0px;padding-left:0px;}
+.navpanel ul.v-list li{padding-left:13px;}
+.navpanel ul li.title{padding-left:0px;}
+.navpanel li.localnavselected a{padding-left:0px;}
+/* Light Blue Gradient Panels */
+.loginpanel .hd,.contacts .hd,.resourcespanel .hd,.dashboardpanel .hd{border-bottom:1px solid #bbccdc; background-color:#e3edf6;background-position:left -881px;}
+.loginpanel .hd .title,.contacts .hd .title, .loginpanel .hd .panel-right,.contacts .hd .panel-right,.resourcespanel .hd .title,.resourcespanel .hd .panel-right,.dashboardpanel .hd .title,.dashboardpanel .hd .panel-right{color:#00456e;}
+.loginpanel .border-top,.contacts .border-top,.resourcespanel .border-top,.dashboardpanel .border-top {background-position:left -876px;}
+.loginpanel .border-bottom,.contacts .border-bottom,.resourcespanel .border-bottom,.dashboardpanel .border-bottom {background-position:left -975px;}
+.loginpanel .edge-tl,.contacts .edge-tl,.resourcespanel .edge-tl,.dashboardpanel .edge-tl {background-position:left -738px;}
+.loginpanel .edge-tr,.contacts .edge-tr,.resourcespanel .edge-tr,.dashboardpanel .edge-tr {background-position:right -807px;}
+.loginpanel .edge-bl,.contacts .edge-bl,.resourcespanel .edge-bl,.dashboardpanel .edge-bl {background-position:left -949px;}
+.loginpanel .edge-br,.contacts .edge-br,.resourcespanel .edge-br,.dashboardpanel .edge-br {background-position:right -962px;}
+.loginpanel .at-panelcontainer,.contacts .at-panelcontainer,.resourcespanel .at-panelcontainer,.dashboardpanel .at-panelcontainer {border-right:1px solid #bbccdc;border-left:1px solid #bbccdc;}
+/* Gold Gradient Panels */
+.profilenav .hd,.syllabuspanel .hd{border-bottom:1px solid #e1c480; background-color:#ebd5a1;background-position:left -1127px;}
+.profilenav .hd .title, .profilenav .hd .panel-right,.syllabuspanel .hd .title,.syllabuspanel .hd .panel-right{color:#000;}
+.profilenav .border-top,.syllabuspanel .border-top {background-position:left -1122px;}
+.profilenav .border-bottom,.syllabuspanel .border-bottom {background-position:left -1221px;}
+.profilenav .edge-tl,.syllabuspanel .edge-tl {background-position:left -984px;}
+.profilenav .edge-tr,.syllabuspanel .edge-tr {background-position:right -1053px;}
+.profilenav .edge-bl,.syllabuspanel .edge-bl {background-position:left -1195px;}
+.profilenav .edge-br,.syllabuspanel .edge-br {background-position:right -1208px;}
+.profilenav .at-panelcontainer,.syllabuspanel .at-panelcontainer {border-right:1px solid #e1c480;border-left:1px solid #e1c480;}
+/* Blue Background Panels */
+.librarygroup .hd,.librarypanel .hd,.panelset5 .hd,.classaveragespanel .hd{border-bottom:none;background-color:#e7f0f9;background-image:none;}
+.librarygroup .hd .title,.panelset5 .hd .title, .librarygroup .hd .panel-right,.librarypanel .hd .panel-right,.librarypanel .hd .title,.panelset5 .hd .panel-right,.classaveragespanel .hd .title,.classaveragespanel .hd .panel-right{color:#000;}
+.librarygroup .border-top,.panelset5 .border-top, .librarypanel .border-top,.classaveragespanel .border-top {background-position:left -1368px;}
+.librarygroup .border-bottom,.panelset5 .border-bottom, .librarypanel .border-bottom,.classaveragespanel .border-bottom {background-position:left -1467px;}
+.librarygroup .edge-tl,.panelset5 .edge-tl, .librarypanel .edge-tl,.classaveragespanel .edge-tl {background-position:left -1230px;}
+.librarygroup .edge-tr,.panelset5 .edge-tr, .librarypanel .edge-tr,.classaveragespanel .edge-tr {background-position:right -1299px;}
+.librarygroup .edge-bl,.panelset5 .edge-bl, .librarypanel .edge-bl,.classaveragespanel .edge-bl {background-position:left -1441px;}
+.librarygroup .edge-br,.panelset5 .edge-br, .librarypanel .edge-br,.classaveragespanel .edge-br {background-position:right -1454px;}
+.librarygroup .at-panelcontainer,.panelset5 .at-panelcontainer, .librarypanel .at-panelcontainer,.classaveragespanel .at-panelcontainer {border-right:1px solid #738fb8;border-left:1px solid #738fb8;background-color:#e7f0f9;}
+.librarypanel .formlayout fieldset{margin-bottom:0px;}
+*html .librarypanel .formlayout fieldset{padding:6px 6px 3px 6px;}
+html > body .librarypanel .formlayout fieldset{padding:6px 6px 5px 6px;}
+.librarypanel .button{margin-left:5px;}
+/* Workshop Panels */
+.workshops ul.h-line li,.campusnewspanel ul.h-line li {border-bottom:1px dotted #ccc;}
+.workshops ul.h-line li.last,.campusnewspanel ul.h-line li.last {border-bottom:none;}
+/*.workshops .bd,.campusnewspanel .bd {padding-bottom:0px;}*/
+.workshops .ft,.campusnewspanel .ft {padding-top:0px;}
+/* White Background Panels */
+.librarygroup2 .hd,.sponsorpanel .hd{border-bottom:none;background-color:#fff;background-image:none;}
+.librarygroup2 .hd .title, .librarygroup2 .hd .panel-right,.sponsorpanel .hd .title,.sponsorpanel .hd .panel-right{color:#000;}
+.librarygroup2 .border-top,.sponsorpanel .border-top {background-position:left -1614px;}
+.librarygroup2 .border-bottom,.sponsorpanel .border-bottom {background-position:left -1713px;}
+.librarygroup2 .edge-tl,.sponsorpanel .edge-tl {background-position:left -1476px;}
+.librarygroup2 .edge-tr,.sponsorpanel .edge-tr {background-position:right -1545px;}
+.librarygroup2 .edge-bl,.sponsorpanel .edge-bl {background-position:left -1687px;}
+.librarygroup2 .edge-br,.sponsorpanel .edge-br {background-position:right -1700px;}
+.librarygroup2 .at-panelcontainer,.sponsorpanel .at-panelcontainer {border-right:1px solid #cacaca;border-left:1px solid #cacaca;background-color:#fff;}
+.sponsorpanel .hd .title{text-align: center; font-size: 165%; float:none;}
+.sponsorpanel .bd{overflow:hidden;}
+.sponsors{text-align:center; font-style:italic;font-size:120%;padding:6px 0px}
+.sponsorlogos{height:59px;width:100%;}
+/* Gray Background Panels */
+.librarygroup3 .hd{border-bottom:none;background-color:#e4e4e4;background-image:none;}
+.librarygroup3 .hd .title, .librarygroup3 .hd .panel-right{color:#000;}
+.librarygroup3 .border-top {background-position:left -1860px;}
+.librarygroup3 .border-bottom {background-position:left -1959px;}
+.librarygroup3 .edge-tl {background-position:left -1722px;}
+.librarygroup3 .edge-tr {background-position:right -1791px;}
+.librarygroup3 .edge-bl {background-position:left -1933px;}
+.librarygroup3 .edge-br {background-position:right -1946px;}
+.librarygroup3 .at-panelcontainer {border-right:1px solid #bfbfbf;border-left:1px solid #bfbfbf;background-color:#e4e4e4;}
+/* Square Panels */
+.news{border-top:1px solid #ccc;border-bottom:1px solid #ccc;}
+.news .border-top, .news .border-bottom{display:none;}
+/* Old Panels */
+.forumlist .hd{border-bottom:none; background-color:#f4f5f6;background-position:left -420px;}
+.forumlist .hd .title, .forumlist .hd .panel-right{color:#000;}
+.forumlist .border-top {background-position:left -200px;}
+.forumlist .border-bottom {background-position:left -231px;}
+.forumlist .edge-tl {background-position:left -140px;}
+.forumlist .edge-tr {background-position:right -120px;}
+.forumlist .edge-bl {background-position:left -171px;}
+.forumlist .edge-br {background-position:right -191px;}
+.forumlist .at-panelcontainer {border-right:1px solid #ccc;border-left:1px solid #ccc; padding-top:2px; padding-left:2px; padding-right:2px;}
+.forumlist{border-top:1px solid #ccc;border-bottom:1px solid #ccc;}
+.forumlist .border-top, .forumlist .border-bottom{display:none;}
+/* ICON STYLES: 16px
+-------------------------------------------------------------------- */
+.disabled .icon{background-image:url(../images/ns/disable-icon_grid.png);height:20px;width:20px;background-color:transparent;background-repeat:no-repeat;}
+.disabled span.btn-text{color:#999;}
+.icon{background-image:url(../images/ns/icon_grid.png);height:20px;width:20px;background-color: transparent;background-repeat:no-repeat;overflow:hidden;}
+h1 .icon,h2 .icon,h3 .icon,h4 .icon,h5 .icon,h6 .icon{line-height:0px;padding:0px; font-size:0px;}
+.iconSmall{background-image:url(../images/ns/icon_grid.png);height:10px;width:10px;background-color: transparent;background-repeat:no-repeat;}
+span.icon, span.iconSmall {display:-moz-inline-block;display:-moz-inline-box;display:inline-block;vertical-align:middle;margin-right:3px;}
+a span.icon, a span.iconSmall {cursor:pointer;}
+a.disabled span.icon, a.disabled,a.disable a:visited, a.disabled:hover{cursor:default; text-decoration:none;}
+a.inactiveLink,a.inactiveLink:hover,a.inactiveLink:hover span.icon{text-decoration:line-through;cursor:wait;}
+/* Link Icon Fix for the underline under icon */
+a.lefticon[class]{margin-left:20px;}
+a.lefticon span.icon[class]{margin-left:-22px;}
+a.righticon span.icon{margin-right:-21px; margin-left:0px;}
+a.righticon{margin-right:20px;}
+/* a.:hover */
+span.icon[class] span:hover, span.iconSmall span:hover, a.attachment-icon:hover, a.acrobat-icon:hover, a.email2-icon:hover, a.cancel-icon:hover, a.cell-icon:hover, a.collapse-icon:hover, a.campus-icon:hover, a.creditcard-icon:hover, a.ebooksm-icon:hover, a.editall-icon:hover, a.email-icon:hover, a.expand-icon:hover, a.excel-icon:hover, a.forward-icon:hover, a.word-icon:hover, a.printer-icon:hover, a.no-icon:hover, a.notes-icon:hover, a.addfile-icon:hover, a.addbluefile-icon:hover, a.addnote-icon:hover, a.newreview-icon:hover, a.instructor-icon:hover, a.moderator-icon:hover, a.search-icon:hover, a.delete-icon:hover, a.back-icon:hover, a.clear-icon:hover, a.update-icon:hover, a.reporterror-icon:hover, a.view-icon:hover, a.success-icon:hover, a.remove-icon:hover, a.error-icon:hover, a.add-icon:hover, a.edit-icon:hover, a.edittable-icon:hover, a.print-icon:hover, a.calendar-icon:hover, a.lock-icon:hover, a.refresh-icon:hover, a.syllabus-icon:hover, a.gradebook-icon:hover,a.ebook-icon:hover, a.library-icon:hover, a.news-icon:hover, a.discussion-icon:hover, a.cwe-icon:hover, a.assignment-icon:hover, a.cme-icon:hover, a.cme2-icon:hover, a.toolbox-icon:hover, a.toolbox2-icon:hover, a.dude-icon:hover, a.mailattachment-icon:hover, a.phone-icon:hover, a.pubteams-icon:hover, a.publish-icon:hover, a.pdf-icon:hover, a.viewphotos-icon:hover, a.rightbluearrow-icon:hover, a.select-icon:hover, a.editProfile-icon:hover, a.arrowOrange-icon:hover, a.save-icon:hover, a.arrowUp-icon:hover, a.reset-icon:hover, a.arrowDown-icon:hover, a.program-icon:hover, a.progress-icon:hover, a.spellcheck-icon:hover, a.sticky-icon:hover, a.owe-icon:hover, a.submit-icon:hover, a.roster-icon:hover, a.trashcan-icon:hover, a.cancelBlue-icon:hover, a.btnmin-icon:hover, a.btnmax-icon:hover, a.hidearrow-icon:hover, a.expandarrow-icon:hover, a.video-icon:hover, a.ascending-icon:hover, a.descending-icon:hover, a.whatsthis-icon:hover, a.home-icon:hover, a.buy-icon:hover, a.download-icon:hover, a.paper-icon:hover, a.printchap-icon:hover, a.downloadchap-icon:hover, a.help-icon:hover, a.help2-icon:hover, a.downloadebook-icon:hover, a.returnlist-icon:hover, a.close-icon:hover, a.close2-icon:hover, a.ebookcoll-icon:hover, a.wordsm-icon:hover, a.pdfsm-icon:hover, a.newwin-icon:hover, a.tickcomplete-icon:hover, a.tickincomplete-icon:hover, a.postnew-icon:hover, a.quote-icon:hover, a.insertsig-icon:hover, a.thread-icon:hover, a.newwinsm-icon:hover, a.next-icon:hover, a.nextgray-icon:hover, a.previousgray-icon:hover, a.tickcomplete-icon:hover, a.intickcomplete-icon:hover, a.progress-icon:hover, a.ppt2-icon:hover, a.pdf2-icon:hover, a.excel2-icon:hover, a.word2-icon:hover, a.dude2-icon:hover, a.green-flag-icon:hover, a.pptsm-icon:hover, a.selectall-icon:hover, a.selectnone-icon:hover, a.folder-icon:hover, a.pc-icon:hover, a.wp-icon:hover, a.question-icon:hover, a.published-icon:hover, a.discquestion-icon:hover, a.drop-icon:hover, a.alert-icon:hover, a.unsub-icon:hover, a.sub-icon:hover, a.withdraw-icon:hover, a.neutral-icon:hover, a.announcement-icon:hover, a.reply-icon:hover, a.scale-icon:hover, a.sortascend-icon:hover, a.sortdescend-icon:hover, a.visiostencil-icon:hover, a.visiotemplate-icon:hover, a.wizoneactive-icon:hover, a.wiztwoactive-icon:hover, a.wizthreeactive-icon:hover, a.wizfouractive-icon:hover, a.wizfiveactive-icon:hover, a.wizoneinactive-icon:hover, a.wiztwoinactive-icon:hover, a.wizthreeinactive-icon:hover, a.wizfourinactive-icon:hover, a.wizfiveinactive-icon:hover, a.collapse2-icon:hover, a.expand2-icon:hover, /* a. */
+a.no-icon, .box-white a.arrowOrange-icon, a.acrobat-icon, a.arrowUp-icon, a.arrowDown-icon, a.attachment-icon, a.email2-icon, a.syllabus-icon, a.cancel-icon, a.cell-icon, a.collapse-icon, a.campus-icon, a.creditcard-icon, a.ebooksm-icon, a.editall-icon, a.email-icon, a.excel-icon, a.expand-icon, a.forward-icon, a.instructor-icon, a.word-icon, a.printer-icon, a.no-icon, a.notes-icon, a.addfile-icon, a.addbluefile-icon, a.addnote-icon, a.newreview-icon, a.search-icon, a.delete-icon, a.back-icon, a.clear-icon, a.moderator-icon, a.update-icon, a.reporterror-icon, a.view-icon, a.success-icon, a.remove-icon, a.error-icon, a.add-icon, a.edit-icon, a.edittable-icon, a.print-icon, a.lock-icon, a.refresh-icon, a.calendar-icon, a.gradebook-icon, a.ebook-icon, a.library-icon, a.discussion-icon, a.news-icon, a.cwe-icon, a.assignment-icon, a.cme-icon, a.phone-icon, a.cme2-icon, a.pdf-icon, a.toolbox-icon, a.toolbox2-icon, a.dude-icon, a.mailattachment-icon, a.viewphotos-icon, a.rightbluearrow-icon, a.select-icon, a.editProfile-icon, a.arrowOrange-icon, a.save-icon, a.spellcheck-icon, a.editProfile-icon, a.reset-icon, a.pubteams-icon, .arrowUp-icon, a.publish-icon, a.editProfile-icon, .arrowDown-icon, a.program-icon, a.sticky-icon, a.owe-icon, a.submit-icon, a.roster-icon, a.trashcan-icon, a.cancelBlue-icon, a.btnmin-icon , a.btnmax-icon, a.hidearrow-icon, a.expandarrow-icon, a.video-icon, a.ascending-icon, a.descending-icon, a.whatsthis-icon, a.home-icon, a.buy-icon, a.download-icon, a.paper-icon, a.printchap-icon, a.downloadchap-icon, a.help-icon, a.help2-icon, a.downloadebook-icon, a.returnlist-icon, a.close-icon, a.close2-icon, a.ebookcoll-icon, a.wordsm-icon, a.pdfsm-icon, a.newwin-icon, a.tickincomplete-icon, a.postnew-icon, a.quote-icon, a.insertsig-icon, a.thread-icon, a.newwinsm-icon, a.next-icon, a.previous-icon, a.nextgray-icon, a.previousgray-icon, a.intickcomplete-icon, a.selectall-icon, a.selectnone-icon, a.folder-icon, a.excel-icon, a.word-icon, a.printer-icon, a.notes-icon, a.addfile-icon, a.addbluefile-icon, a.addnote-icon, a.newreview-icon, a.search-icon, a.delete-icon, a.back-icon, a.clear-icon, a.update-icon, a.reporterror-icon, a.view-icon, a.success-icon, a.remove-icon, a.error-icon, a.add-icon, a.edit-icon, a.edittable-icon, a.print-icon, a.lock-icon, a.refresh-icon, a.calendar-icon, a.syllabus-icon, a.gradebook-icon, a.ebook-icon, a.library-icon, a.discussion-icon, a.cwe-icon, a.assignment-icon, a.cme-icon, a.cme2-icon, a.toolbox-icon, a.toolbox2-icon, a.dude-icon, a.mailattachment-icon, a.viewphotos-icon, a.rightbluearrow-icon, a.editProfile-icon, a.arrowOrange-icon, a.editProfile-icon, a.editProfile-icon, a.tickcomplete-icon, a.ppt2-icon, a.pdf2-icon, a.excel2-icon, a.word2-icon, a.dude2-icon, a.green-flag-icon, a.pptsm-icon, a.pc-icon, a.wp-icon, a.question-icon, a.published-icon, a.discquestion-icon, a.drop-icon, a.alert-icon, a.reply-icon, a.unsub-icon, a.sub-icon, a.withdraw-icon, a.neutral-icon, a.announcement-icon, a.scale-icon, a.sortascend-icon, a.sortdescend-icon, a.visiostencil-icon, a.visiotemplate-icon, a.wizoneactive-icon, a.wiztwoactive-icon, a.wizthreeactive-icon, a.wizfouractive-icon, a.wizfiveactive-icon, a.wizoneinactive-icon, a.wiztwoinactive-icon, a.wizthreeinactive-icon, a.wizfourinactive-icon, a.wizfiveinactive-icon, a.collapse2-icon, a.expand2-icon,a.unlock-icon:hover,a.unlock-icon,a.picture-icon:hover,a.picture-icon{text-decoration:underline;}
+/* No Icon View */
+.no-icon span.icon{display:none;}
+/* Icons Positions */
+/* Col 20 */
+.email-icon span.icon {background-position: -20px -20px;}
+.mailattachment-icon span.icon {background-position: -20px -80px;}
+.email2-icon span.icon {background-position: -20px -100px;}
+.lock-icon span.icon {background-position: -22px -120px;}
+.hidearrow-icon span.icon {background-position: -20px -140px;}
+*html .hidearrow-icon span.icon {background-position: -20px -138px;}
+.expandarrow-icon span.icon {background-position: -20px -162px;}
+*html .expandarrow-icon span.icon {background-position: -20px -160px;}
+.acrobat-icon span.icon {background-position: -20px -200px;}
+.tutorstatus-icon span.icon {background-position: -20px -220px;}
+/* Col 40 */
+.select-icon span.icon {background-position: -40px -20px;}
+.submit-icon span.icon,.success-msg div.icon {background-position:-40px -40px;}
+.refresh-icon span.icon {background-position: -40px -60px;}
+.reset-icon span.icon {background-position: -40px -80px;}
+.progress-icon span.icon {background-position: -40px -100px;}
+.cancelBlue-icon span.icon {background-position: -40px -120px;}
+.btnmin-icon span.icon {background-position: -40px -142px;}
+*html .btnmin-icon span.icon {background-position: -40px -140px;}
+.minus-icon span.icon{background-position:-40px -140px;}
+.btnmax-icon span.icon {background-position: -40px -162px;}
+*html .btnmax-icon span.icon {background-position: -40px -160px;}
+.plus-icon span.icon{background-position:-40px -160px;}
+/* Col 60 */
+.cancel-icon span.icon {background-position: -60px -40px;}
+.trashcan-icon span.icon {background-position: -60px -140px;}
+.selectall-icon span.icon {background-position: -60px -160px;}
+.selectnone-icon span.icon {background-position: -60px -180px;}
+.pc-icon span.icon {background-position: -60px -200px;}
+.wp-icon span.icon {background-position: -60px -220px;}
+/* Col 80 */
+.add-icon span.icon {background-position: -80px -20px;}
+.remove-icon span.icon {background-position: -80px -40px;}
+.warning-msg div.icon{background-position:-140px -60px;}
+/*.warning-msg div.icon{background-position:-80px -80px;}*/
+.spellcheck-icon span.icon {background-position: -80px -140px;}
+.close-icon span.icon {background-position: -80px -160px;}
+.close2-icon span.icon {background-position: -80px -178px;}
+.delete-icon span.icon {background-position: -80px -200px;}
+/* Col 100 */
+.phone-icon span.icon {background-position: -100px -40px;}	
+.editall-icon span.icon {background-position: -100px -80px;}
+.video-icon span.icon {background-position: -100px -100px;}
+.cell-icon span.icon {background-position: -100px -120px;}
+.download-icon span.icon {background-position: -100px -140px;}
+.buy-icon span.icon {background-position: -100px -160px;}
+.ppt2-icon span.icon{background-position:-100px -180px;}
+.addcomments-icon span.icon{background-position:-100px -200px;}
+.mgmtcomments-icon span.icon{background-position:-100px -220px;}
+/* Col 120 */
+.collapse-icon span.icon{background-position: -120px -20px;}
+.expand-icon span.icon {background-position: -120px -40px;}
+.ascending-icon span.icon {background-position: -120px -60px;}
+.descending-icon span.icon {background-position: -120px -80px;}
+.collapse2-icon span.icon {background-position: -120px -140px;}
+.expand2-icon span.icon {background-position: -120px -160px;}
+.pdf2-icon span.icon{background-position:-120px -180px;}
+/* Col 140 */
+.error-icon span.icon, .error-msg div.icon {background-position: -140px -20px;}
+.success-icon span.icon {background-position: -140px -40px;}
+.warning-icon span.icon {background-position: -140px -60px;}
+.help-icon span.icon {background-position: -140px -80px;}
+.help-msg div.icon{background-position: -140px -120px;}
+.info-msg div.icon{background-position: -140px -140px;}
+.help2-icon span.icon {background-position: -140px -160px;}
+.post-icon span.icon {background-position: -140px -220px;}
+/* Col 160 */
+.save-icon span.icon {background-position: -160px -20px;}	
+.search-icon span.icon, .view-icon span.icon {background-position: -160px -40px;}
+.print-icon span.icon, .printer-icon span.icon {background-position: -160px -60px;}
+.clear-icon span.icon {background-position: -160px -140px;}
+.roster-icon span.icon {background-position: -160px -160px;}
+.folder-icon span.icon {background-position: -160px -180px;}
+/* Col 180 */
+.news-icon span.icon {background-position: -180px -60px;}
+.preview-icon span.icon {background-position: -180px -80px;}
+.edit-icon span.icon,.notes-icon span.icon  {background-position: -180px -100px;}
+.edittable-icon span.icon, .update-icon span.icon {background-position: -180px -120px;}
+/* Col 200 */
+.editProfile-icon span.icon {background-position: -200px -120px;}
+.program-icon span.icon {background-position: -200px -140px;}
+.owe-icon span.icon {background-position: -200px -160px;}
+/* Col 220 */
+.forward-icon span.icon {background-position: -221px -40px;} /* -200px -140px */
+.back-icon span.icon {background-position: -221px -60px;} /* -200px -140px */
+.viewphotos-icon span.icon {background-position: -200px -120px;}
+.publish-icon span.icon {background-position: -220px -160px;}
+.blueup-icon span.icon {background-position: -220px -180px;}
+/* Col 240 */
+.last2-icon span.icon {background-position: -240px -20px;}
+.first2-icon span.icon {background-position: -240px -40px;}
+.prev2-icon span.icon {background-position: -240px -60px;}
+.next2-icon span.icon {background-position: -240px -80px;}
+.rightbluearrow-icon span.icon {background-position: -238px -101px;}
+.arrowOrange-icon span.icon {background-position: -240px -120px;}	
+.arrowUp-icon span.icon {background-position: -237px -140px;}	
+.arrowDown-icon span.icon {background-position: -237px -160px;}	
+.dwnorange-icon span.icon {background-position: -240px -180px;}	
+.leftbluearrow-icon span.icon {background-position: -240px -200px;}
+.arrowOrange-icon span.iconSmall {background-position: -243px -121px;}	
+.arrowOrange-icon span.iconSmall[class] {background-position: -243px -125px;}
+.dwnorange-icon span.iconSmall {background-position: -245px -181px;}	
+.dwnorange-icon span.iconSmall[class] {background-position: -245px -185px;}
+/* Col 260 */
+.whatsthis-icon span.icon {background-position: -260px -40px;}
+.dude-icon span.icon {background-position: -261px -122px;}
+.attachment-icon span.icon {background-position: -260px -140px;}
+.pubteams-icon span.icon {background-position: -260px -160px;}
+.dude2-icon span.icon{background-position:-260px -180px;}
+/* Col 280 */
+.excel2-icon span.icon{background-position:-280px -20px;}
+.excel-icon span.icon {background-position: -280px -40px;}
+.word2-icon span.icon{background-position:-280px -60px;}
+.word-icon span.icon {background-position: -280px -80px;}
+.pdf-icon span.icon {background-position: -280px -100px;}
+.instructor-icon span.icon {background-position: -280px -120px;}
+.red-flag-icon span.icon {background-position: -280px -140px;}
+.postnew-icon span.icon {background-position: -281px -160px;}
+.visiostencil-icon span.icon {background-position: -281px -180px;}
+.visiotemplate-icon span.icon {background-position: -281px -200px;}
+/* Col 300 */
+.paper-icon span.icon {background-position: -300px -20px;}
+.creditcard-icon span.icon {background-position: -300px -60px;}
+.home-icon span.icon {background-position: -300px -80px;}
+.campus-icon span.icon {background-position: -300px -100px;}
+.moderator-icon span.icon {background-position: -300px -120px;}	
+.yellow-flag-icon span.icon {background-position: -300px -140px;}
+.quote-icon span.icon {background-position: -300px -160px;}
+.reply-icon span.icon {background-position: -300px -200px;}
+/* Col 320 */
+.calendar-icon span.icon {background-position: -320px -20px;}
+.gradebook-icon span.icon {background-position: -320px -40px;}	
+.discussion-icon span.icon {background-position: -320px -60px;}	
+.cwe-icon span.icon {background-position: -320px -80px;}
+.cme-icon span.icon {background-position: -320px -100px;}	
+.toolbox-icon span.icon {background-position: -320px -120px;}
+.grey-flag-icon span.icon {background-position: -320px -140px;}
+.insertsig-icon span.icon {background-position: -320px -160px;}
+/* Col 340 */
+.addfile-icon span.icon, .syllabus-icon span.icon {background-position: -340px -20px;}
+.addbluefile-icon span.icon, .ebook-icon span.icon {background-position: -340px -40px;} 
+.addnote-icon span.icon, .library-icon span.icon {background-position: -340px -60px;}
+.assignment-icon span.icon {background-position: -340px -80px;}
+.cme2-icon span.icon {background-position: -340px -100px;}
+.toolbox2-icon span.icon {background-position: -340px -120px;}
+.blue-flag-icon span.icon {background-position: -340px -140px;}
+.thread-icon span.icon {background-position: -340px -160px;}
+.upload-icon span.icon {background-position: -340px -180px;}
+/* Col 360 */
+.reporterror-icon span.icon {background-position: -360px -20px;}
+.reporterror-off-icon span.icon {background-position: -360px -40px;}
+.sticky-icon span.icon {background-position: -360px -60px;}
+.moderator-icon span.icon {background-position: -360px -80px;}
+.picture-icon span.icon {background-position: -360px -120px;}
+.green-flag-icon span.icon {background-position: -360px -140px;}
+.add-icon span.icon  {background-position: -360px -160px;}
+.ebooksm-icon span.icon  {background-position: -360px -180px;}
+/* Col 380 */
+.downloadchap-icon span.icon {background-position: -380px -20px;}
+.downloadebook-icon span.icon {background-position: -380px -40px;}
+.printchap-icon span.icon {background-position: -380px -60px;}
+.returnlist-icon span.icon {background-position: -380px -80px;}
+.pdfsm-icon span.iconSmall, .pdfsm-icon span.icon {background-position: -380px -100px;}
+.ebookcoll-icon span.icon {background-position: -380px -120px;}
+.newwin-icon span.iconSmall,.newwinsm-icon span.icon,.openwindow-icon span.icon{background-position: -380px -140px;}
+.wordsm-icon span.iconSmall,.wordsm-icon span.icon {background-position: -380px -160px;}
+.pptsm-icon span.icon{background-position:-380px -180px;}
+.excelsm-icon span.icon {background-position: -380px -200px;}
+.projectsm-icon span.icon {background-position: -380px -220px;}
+/* Col 400 */
+.tickcomplete-icon span.icon{background-position: -400px -20px;}
+.tickincomplete-icon span.icon{background-position: -400px -40px;}
+.next-icon span.icon{background-position: -400px -60px;}
+.previous-icon span.icon{background-position: -400px -80px;}
+.nextgray-icon span.icon{background-position: -400px -100px;}
+.previousgray-icon span.icon{background-position: -400px -120px;}
+/* Col 420 */
+.addpage-icon span.icon{background-position: -420px -20px;}
+.addrow-icon span.icon{background-position: -420px -40px;}
+.addnote-icon span.icon{background-position: -420px -60px;}
+.deleterow-icon span.icon{background-position: -420px -80px;}
+.saverow-icon span.icon{background-position: -420px -100px;}
+.savepage-icon span.icon{background-position: -420px -120px;}
+.view-icon span.icon{background-position: -420px -140px;}
+.notpublished-icon span.icon{background-position: -420px -160px;}
+/* Col 440 */
+.question-icon span.icon{background-position:-440px -20px;}
+.published-icon span.icon{background-position:-440px -40px;}
+.discquestion-icon span.icon{background-position:-440px -60px;}
+.drop-icon span.icon{background-position:-440px -80px;}
+.alert-icon span.icon{background-position:-440px -100px;}
+.unsub-icon span.icon{background-position:-440px -120px;}
+.sub-icon span.icon{background-position:-440px -140px;}
+.withdraw-icon span.icon{background-position:-440px -160px;}
+.neutral-icon span.icon{background-position:-440px -180px;}
+.announcement-icon span.icon{background-position:-440px -200px;}
+.scale-icon span.icon{background-position:-440px -220px;}
+/* Col 460 */
+.wizoneactive-icon span.icon{background-position:-460px -20px;}
+.wiztwoactive-icon span.icon{background-position:-460px -40px;}
+.wizthreeactive-icon span.icon{background-position:-460px -60px;}
+.wizfouractive-icon span.icon{background-position:-460px -80px;}
+.wizfiveactive-icon span.icon{background-position:-460px -100px;}
+.filter-icon span.icon{background-position:-460px -120px;}
+.sortascend-icon span.icon {background-position:-460px -140px;}
+.sortdescend-icon span.icon {background-position:-460px -160px;}
+/* Col 480 */
+.wizoneinactive-icon span.icon{background-position:-480px -20px;}
+.wiztwoinactive-icon span.icon{background-position:-480px -40px;}
+.wizthreeinactive-icon span.icon{background-position:-480px -60px;}
+.wizfourinactive-icon span.icon{background-position:-480px -80px;}
+.wizfiveinactive-icon span.icon{background-position:-480px -100px;}
+/* ICON STYLES: 64px
+-------------------------------------------------------------------- */
+.icon64 {background-image:url(../images/ns/icon64_grid.png);height:75px;width:75px;background-color: transparent;background-repeat:no-repeat;} 	     
+.calendar-icon64 span.icon64 {background-position: -450px -75px;}
+.courselabel span.icon {background-image:url(../images/ns/icon64_grid.png);height:72px;width:66px;background-color: transparent;background-repeat:no-repeat;}
+.class-icon span.icon {background-position:left 0px;}
+.workshop-icon span.icon {background-position:left -150px;}
+.training-icon span.icon {background-position:left -300px;}
+/* MESSAGE CENTER
+-------------------------------------------------------------------- */
+*html .msg{height:1%;}
+html > body .msg{overflow:hidden;}
+.msg{font-size:93%;padding:5px;text-align:left;}
+.msg h2{margin-top:2px; font-weight:bold;}
+.success-msg div.msg,.error-msg div.msg,.warning-msg div.msg,.info-msg div.msg,.help-msg div.msg{color:#000;}
+.success-msg,.error-msg,.warning-msg,.info-msg,.idea-msg,.help-msg{background:url(../images/ns/gradient_vGrid.png) repeat-y;background-color: transparent;}
+*html .success-msg,.error-msg,.warning-msg,.info-msg,.idea-msg,.help-msg{height:1%;}
+.success-msg .msg-container,.error-msg .msg-container,.warning-msg .msg-container,.info-msg .msg-container,.help-msg .msg-container{margin-left:6px;}
+.success-msg div.icon,.error-msg div.icon,.warning-msg div.icon,.info-msg div.icon,.help-msg div.icon{float:left;margin-left:6px;margin-top:7px;}
+.success-msg,.error-msg,.warning-msg,.info-msg,.help-msg{margin:5px 0px 5px 0px;}
+/* Success Msg ---------------- */
+.success-msg{border:1px solid #399534;background-color:#d9f6d8;background-position:0;}
+.success-msg .msg-container{background-color:#d9f6d8;}
+.success-msg h2{color:#006633;}
+/* Error Msg ---------------- */
+.error-msg{border:1px solid #953434;background-color:#f6d8d8;background-position: -12px 0;}
+.error-msg .msg-container{background-color:#f6d8d8;}
+.error-msg h2{color:#D83636;}
+/* Warning Msg ---------------- */
+.warning-msg{border:1px solid #c16803;background-color:#fbf2c3;background-position: -6px 0;}
+.warning-msg  .msg-container{background-color:#fbf2c3;}
+.warning-msg h2{color:#c6730d;}
+/* Info Msg ---------------- */
+.info-msg{border:1px solid #345395;background-color:#d8e5f6;background-position: -24px 0;}
+.info-msg .msg-container{background-color:#d8e5f6;}
+.info-msg h2{color:#325f94;}
+/* Help Msg ---------------- */
+.help-msg{border:1px solid #ffb932;background-color:#fffce6;background-position: -18px 0;}
+.help-msg  .msg-container{background-color:#fffce6;}
+.help-msg h2{color:#325f94;}
+/* Message List bullet ---------------- */ 
+div.msg ul li{list-style-type:circle;margin-left:20px;}
+/* TABS : Main Tabs
+-------------------------------------------------------------------- */
+#hd .at-tabs ul{padding:5px 0px 0px 13.8em;}
+*html .at-tabs ul, *html .at-tabs a{height:1%;}
+html > body .at-tabs ul{overflow:hidden;}
+.at-tabs em.tab-left{font-style:normal;}
+.at-tabs ul,.at-tabs ul li,.at-tabs li.active .tab-inner,#hd .at-tabs,.at-tabs li.at-selected .tab-inner{background-image: url(../images/ns/gradient_hGrid.png);}
+#hd .at-tabs{background-repeat:repeat-x; background-position:left -0px;}
+.at-tabs li.active em.tab-left,.at-tabs li.active a.tab-right,.at-tabs li.at-selected em.tab-left,.at-tabs li.at-selected a.tab-right{background-image: url(../images/ns/tab-grid.png);background-repeat:no-repeat;}
+.at-tabs ul{padding:5px 0px 0px 10em;margin:0px; background-repeat:repeat-x; background-position:left -0px;}
+.at-tabs ul li{float:left;list-style-type:none;padding:0;margin:0px;background-color:#bdcfdd; background-position:left -6px; background-repeat:repeat-x;}
+.at-tabs li a{font-size:100%;font-weight:bold;float:left;display:block;padding:0px; color:#002b42;margin:0px;border-right:1px solid #acbfcf;text-decoration:none;cursor:pointer;}
+.at-tabs li .tab-inner,.at-tabs .tab-text{padding:3px 5px;}
+*html .at-tabs li a.tab-right{cursor:hand;}
+.at-tabs li.active em.tab-left,.at-tabs .tab-inner,.at-tabs .tab-text,.at-tabs li.at-selected em.tab-left{display:inline-block;}
+.at-tabs li.active em.tab-left,.at-tabs li.active a.tab-right,.at-tabs li.at-selected em.tab-left,.at-tabs li.at-selected a.tab-right{padding:0px;border:0;}
+.at-tabs li.active,.at-tabs li.at-selected{margin-top:-4px; background-image:none; background-color:transparent;}
+.at-tabs li.active a.tab-right,.at-tabs li.at-selected a.tab-right{text-decoration:none; background-position:right -0px; font-weight:bold; padding-right:6px;}
+.at-tabs li.active em.tab-left,.at-tabs li.at-selected em.tab-left{background-position:left -70px;color:#fff;padding-bottom:0px; padding-left:6px;}
+.at-tabs li.active .tab-inner,.at-tabs li.at-selected .tab-inner{padding:7px 5px 3px; background-repeat: repeat-x;background-position:left -62px;background-color:#084f7c;}
+.at-tabs li.active a.tab-right,.at-tabs li.active a.tab-right:hover,.at-tabs li.at-selected a.tab-right,.at-tabs a.tab-right,.at-tabs a.tab-right:visited{text-decoration:none;}
+/*.at-tabs a.tab-right:hover{text-decoration:underline;}*/
+.tab-strip-spacer{background-color:#084f7c; height:2px; overflow:hidden;}
+/* Tabset 2 */
+.tabset2{background-repeat:repeat-x;background-position:left -130px; margin-bottom:10px;}
+.tabset2 ul{background-position:left -130px; padding-left:10px;}
+.tabset2 ul li{background-image:none; background-color:transparent;}
+.tabset2 li.active{border-top:1px solid #ccc;border-left:1px solid #ccc;border-right:1px solid #ccc; background-color:#fff; background-image:none;}
+.tabset2 li.active a.tab-right,.tabset2 li.at-selected a.tab-right{padding:0px;background:none;}
+.tabset2 li.active em.tab-left,.tabset2 li.at-selected em.tab-left{background-image:none;padding:0px;}
+.tabset2 li.active .tab-inner,.tabset2 li.at-selected .tab-inner{background:none; color:#006699;}
+/* NAV2 
+---------------------------------------------- */
+#classident .iconSmall{margin-top:-4px;}
+div#at-nav2 #nav2backgroundicon {position:relative} 
+#nav2backgroundicon {z-index:998}
+div#at-nav2 {padding:2px 0 0 0;margin:0;background-color:#064976;}
+div#at-nav2 ul{padding:0;margin:0 0 0 13.8em;/* line-height:2.2em; */color:#fff;}
+div#at-nav2 span.nav2Welcome {line-height:2.1em;margin:0 0 0 13.8em;color:#fff;padding:5px 0}
+div#at-nav2 li{list-style:none;padding:0;margin:0;float:left;line-height:1.8em;/* padding:0 12px 5px 12px; */}
+div#at-nav2 select{font-size:80%;margin:1px 0 0 0;}
+div#at-nav2 a {margin: 0;color: #fff;display:block;/* padding: 0 12px 8px 12px; */padding:0px 10px 5px 10px;text-decoration:none;line-height:1.8em;}
+div#at-nav2 a:hover {text-decoration:underline}
+div#at-nav2 a.at-selected {color:#fff;background: url(../images/ns/white_arrow_up.png) no-repeat bottom center;}	
+div#at-nav2 a.at-selected:hover {text-decoration:none;}
+div#at-nav2 li.at-blank{background:none;padding-left:0;}
+div#at-nav2 {background-color:#064976;}
+div#at-nav2 ul{color:#fff;}
+div#at-nav2 span.nav2Welcome{color:#fff;}
+div#at-nav2 select{font-size:80%;}
+div#at-nav2 a {color: #FFF;}
+/* Course Dropdown */
+#nav2backgroundicon .coursedropdown{float:left; position:relative;}
+#nav2backgroundicon .slide-down{margin-left:5px;margin-top:2px; margin-bottom:2px;}
+#nav2backgroundicon .slide-down a{padding:2px;border:1px solid #346d99; color:#fff;background:#036;line-height:normal;font-size:85%;}
+#nav2backgroundicon .slide-down a.btn-slide{text-decoration:none;}
+#nav2backgroundicon .dd-menu-lst{display:none;position:absolute; z-index:333px; border:1px solid #333;color:#333;background: #fff;margin-left:5px;font-size:85%;}
+#nav2backgroundicon .dd-menu-lst a{color:#069;line-height:normal;padding:6px; display:block; border-top:1px solid #fff; border-bottom:1px solid #fff;}
+#nav2backgroundicon .dd-menu-lst a:hover{color:#008bd1; background-color: #eff4fa; border-top:1px solid #dbe1e7; border-bottom:1px solid #dbe1e7;}
+#nav2backgroundicon .dd-menu-lst li{display:block;color:#fff;clear:both;}
+#nav2backgroundicon .dd-menu-lst ul{margin:0px;padding:0px;}
+.ipaneltitle{background-color:#dbe1e7; color:#5f666e; font-weight:bold;padding:3px;}
+/* PAGINATION
+-------------------------------------------------------------------- */
+*html .at-pagination{height:1%;}
+html > body .at-pagination{overflow:hidden;}
+.at-pagination .previous-icon{float:left; padding:3px;}
+.at-pagination .next-icon{float:right; padding:3px;}
+.at-pagination{ border-top:1px dotted #ccc;}
+div.at-pagination ul.h-list{margin-top:6px;}
+div.at-pagination ul.h-list li {padding:0px; background-image:none;margin:0px 2px;}
+div.at-pagination ul.h-list li a{padding:0px 3px 0px 3px; border:1px solid #ccc; display:inline-block;}
+div.at-pagination ul.h-list li a.previous-icon,div.at-pagination ul.h-list li a.next-icon{float:none;border:none;}
+/* BUTTONS
+-------------------------------------------------------------------- */
+span.button,span.button button,span.button input,span.btn-rightside,span.icon{display:-moz-inline-block;display:-moz-inline-box;display:inline-block;}
+*html button{width:1;}
+*html span.button INPUT{width:1;}
+button[type]{margin:0px;padding:0px;}
+/*button[type]{line-height:1.85em;margin:0px;padding:0px;}*/
+span.button button.no-icon{padding-left:4px;}
+span.button button{background-color:transparent;background-image:url(../images/ns/gradient_h2Grid.png);background-repeat:repeat-x;padding-right:4px;padding-left:4px;margin-right:0px;width:auto;overflow:visible;border:none;white-space:nowrap;text-decoration:none;font:bold 1em Arial,Helvetica,sans-serif;}
+span.button{padding-left:2px;background:url(../images/ns/gradient_h2Grid.png) no-repeat;background-position:left 0;margin-right:0px;margin-left:0px;cursor:pointer;}
+span.btn-rightside{background:url(../images/ns/gradient_h2Grid.png) no-repeat;background-position:right -82px;padding-right:2px;}
+span.button button{background-position:left -164px;color:#56566d;}
+span.button span.btn-text{display:inline-block; padding:2px}
+*html span.button span.btn-text{margin-left:3px; margin-right:3px;}
+*html span.button .icon{margin-top:-2px;}
+html > body span.button .icon{margin-top:0px; .margin-top:-4px;}
+span.button span.btn-text[class]{padding-bottom:3px; padding-top:3px;}
+html:first-child span.button span.btn-text{padding-bottom:3px; padding-top:3px;padding-left:6px; padding-right:6px;}
+span.button{margin-right:3px; margin-top:1px;}
+span.button,span.button button{cursor:pointer;}
+/* Disabled Button */
+span.button .disabled,span.button .disabled .btn-rightside,span.button .disabled button,span.disabled,span.disabled input{cursor: no-drop;}
+/* INPUT buttons */
+span.button INPUT{color:#204d6a;margin:0px;padding:0px 5px; zoom:1;cursor:pointer;}
+input[type="button"], input[type="submit"], input[type="image"] {cursor:pointer;}
+html > body span.button input {height:1.75em;max-height:1.75em;min-height:25px;}
+*html span.button INPUT{height:25px;}
+span.button INPUT{margin-right:0px;width:auto;overflow:visible;border:none;white-space:nowrap;text-decoration:none;font:bold 90% Arial,Helvetica,sans-serif; background:transparent;}
+span.button INPUT.withdraw-icon,span.button INPUT.lock-icon,span.button INPUT.previous-icon,span.button INPUT.next-icon,span.button INPUT.cancel-icon,span.button INPUT.submit-icon,span.button INPUT.delete-icon,span.button INPUT.save-icon,span.button INPUT.update-icon,span.button INPUT.add-icon,span.button INPUT.edit-icon,span.button INPUT.preview-icon,span.button INPUT.reset-icon,span.button INPUT.download-icon{background:url(../images/ns/btn_icon_grid.png) no-repeat;padding-right:3px;}
+span.disabled INPUT.withdraw-icon,span.disabled INPUT.lock-icon,span.disabled INPUT.previous-icon,span.disabled INPUT.next-icon,span.disabled INPUT.delete-icon,span.disabled INPUT.save-icon,span.disabled INPUT.update-icon,span.disabled INPUT.add-icon,span.disabled INPUT.preview-icon,span.disabled INPUT.reset-icon,span.disabled INPUT.download-icon{background:url(../images/ns/disabled_btn_icon_grid.png) no-repeat;}
+span.disabled INPUT{color: #999;}
+/* Input Button Icons */
+span.button INPUT.submit-icon{background-position:left -0px;padding-left:27px;}
+span.button INPUT.cancel-icon{background-position:left -60px;padding-left:27px;}
+span.button INPUT.lock-icon{background-position:left -120px;padding-left:27px;}
+span.button INPUT.next-icon{background-position:right -180px;padding-right:27px;}
+span.button INPUT.previous-icon{background-position:left -240px;padding-left:27px;}
+span.button INPUT.delete-icon{background-position:left -300px;padding-left:27px;}
+span.button INPUT.save-icon{background-position:left -360px;padding-left:27px;}
+span.button INPUT.update-icon,span.button INPUT.reset-icon{background-position:left -420px;padding-left:27px;}
+span.button INPUT.add-icon{background-position:left -480px;padding-left:27px;}
+span.button INPUT.edit-icon{background-position:left -540px;padding-left:27px;}
+span.button INPUT.preview-icon{background-position:left -600px;padding-left:27px;}
+span.button INPUT.download-icon{background-position:left -661px;padding-left:27px;}
+/* BUTTON THEMES
+-------------------------------------------------------------------- */
+/* Disabled Button*/
+span.disabled-btn button{background-position:left -902px;color:#717070;cursor: no-drop;}
+/* Baby Blue Button*/
+span.action-btn input{background-position:left -220px;color:#204d6a;cursor:pointer;}
+span.action-btn button{background-position:left -220px;color:#204d6a;cursor:pointer;}
+/* Green Button*/
+span.call-btn{background-position:left -274px;}
+span.call-btn span.btn-rightside{background-position:right -356px;}
+span.call-btn button{background-position:left -437px;color:#FFF;cursor:pointer;}
+/* Red Button*/
+span.endcall-btn{background-position:left -301px;}
+span.endcall-btn span.btn-rightside{background-position:right -382px;}
+span.endcall-btn button{background-position:left -464px;color:#FFF;cursor:pointer;}
+/* Dark Blue Button */
+span.nextbtn, span.prevbtn, span.postthread-btn{background-position:left -696px; background:none;padding:0px;border:solid 1px #88a9c8;background-color:#e6e7e8;}
+span.nextbtn span.btn-rightside, span.prevbtn span.btn-rightside, span.postthread-btn span.btn-rightside{background-position:left -696px;padding:0px;}
+span.nextbtn button, span.prevbtn button, span.postthread-btn button{background-position:left -696px; cursor:pointer;}
+span.postthread-btn button{font-size:90%; font-weight:normal;}
+/* Save (Yellow Button) */
+span.btn-save {background-position:left -614px; background:none;padding:0px;border:solid 1px #ff9600;background-color:#ffe876;}
+span.btn-save span.btn-rightside {background-position:right -614px; background:none;padding:0px;}
+span.btn-save button {background-position:left -614px;cursor:pointer;color:#006699}
+/* Button Container */
+*html .button-container{height:1%;}
+html > body .button-container{overflow:hidden;}
+.button-container span.button {margin-right:5px;}
+.button-container span.button button {padding:0px 2px; margin:0;}
+/* FORM LAYOUT
+-------------------------------------------------------------------- */
+input {font-size: small;}
+.formlayout .button-container span.button{margin-left:0px;}
+select {font-family: verdana, arial, sans-serif;}
+/*  IE Height 1% Fix */
+*html .formlayout,*html form.formlayout div,*html .formlayout div, .datalayout div{height:1%;}
+/* FF Height Overflow Hidden Fix
+--------------------------------------*/
+.formlayout[class],form.formlayout[class] div,.formlayout[class] div,.datalayout[class] div{overflow:hidden;}
+/* Hyperlinks and Span Inline Block */
+form.formlayout div span.form-textonly,.formlayout div span.form-textonly,.datalayout div span.form-textonly{display:-moz-inline-block;display:-moz-inline-box;display:inline-block;}
+.formlayout,.datalayout{margin:5px 0px 10px 0px;}
+.formlayout label{float:left;}
+/* spacing between the form elements */
+form.formlayout fieldset,.formlayout fieldset,div.datalayout fieldset{padding:6px 6px 6px 8px;background-color:#f0f7fe;border:1px solid #c2d4e4;}
+div.fieldset fieldset,fieldset{border:none;padding:0px;margin:0px;}
+div.fieldset{padding:6px 6px 6px 8px;background-color:#f0f7fe;border:1px solid #c2d4e4;}
+form.formlayout div A,.formlayout div A,form.formlayout div input,.formlayout div input,form.formlayout div span.form-textonly,.formlayout div span.form-textonly,div.datalayout div span.form-textonly{float:left;margin:0;padding:0;}
+form.formlayout div span.form-textonly,.formlayout div span.form-textonly,div.datalayout div span.form-textonly{padding:2px 0px;}
+form.formlayout div select,.formlayout div select{float:left;}
+/* Separating input field and other form elements */
+.formelements div, div.datalayout .dataelements div{margin:2px 0;}
+textarea{font:100% Arial,Helvetica,sans-serif;}
+form.formlayout fieldset legend,div.formlayout fieldset legend,.formlayout fieldset legend,div.datalayout fieldset legend,fieldset legend{display:none;}
+form.formlayout .default,div.formlayout .default{border:none;background:none;}
+/* Label */
+form.formlayout p.longdesc br,.formlayout p.longdesc br,div.datalayout p.longdesc br{clear:both;}
+form.formlayout label,.formlayout label,div.datalayout label{float:left;font-weight:bold;color:#000;width:180px;}
+form.formlayout label.inline,.formlayout label.inline{line-height:1.75em;}
+form.formlayout p.longdesc, div.formlayout p.longdesc, div.datalayout p.longdesc {margin-left: 15px;}
+html > body form.formlayout p.longdesc, html > body div.formlayout p.longdesc, html > body div.datalayout p.longdesc {overflow:hidden;}
+*html form.formlayout p.longdesc, *html div.formlayout p.longdesc, *html div.datalayout p.longdesc{height:1%;}
+form.formlayout p.longdesc label, div.formlayout p.longdesc label, div.datalayout p.longdesc label {width:auto;font-weight:normal;}
+*html p.longdesc label {margin-top:3px;}
+html > body p.longdesc label{margin-top:0;}
+form.formlayout p.longdesc a,.formlayout p.longdesc a{float:none;}
+/* input,textarea element by default */
+form.formlayout input.validtxt,.formlayout input.validtxt,form.formlayout textarea.validtxt,.formlayout textarea.validtxt,.validtxt{background-color:#fff;background-image:url(../images/ns/gradient_hGrid.png);background-repeat:repeat-x;background-position:right -206px;border:1px solid #b5b8c8;}
+form.formlayout input.validtxt,.formlayout input.validtxt{padding:1px 3px;font:93%/1.55em;}
+form.formlayout input.validtxt,.formlayout input.validtxt{height:17px;}
+form.formlayout input.validtxt,form.formlayout textarea.validtxt,.formlayout textarea.validtxt{float:left;}
+/* Under Review */
+form.formlayout div.radiobtn,.formlayout div.radiobtn,form.formlayout div.checkbox,.formlayout div.checkbox{float:left;padding-left:5px;padding-right:10px;line-height:1em;}
+/* End of Review */
+/* Checkbox List & Radio List */
+.formlayout table.checkboxlist,.formlayout table.radiobuttonlist{float:left; margin-bottom:0px;}
+.formlayout table.checkboxlist th,.formlayout table.radiobuttonlist th,.formlayout table.checkboxlist td,.formlayout table.radiobuttonlist td{padding:0px;border:none;}
+*html .formlayout table.checkboxlist label,*html .formlayout table.radiobuttonlist label{margin-top:3px;}
+html > body .formlayout table.checkboxlist label,html > body .formlayout table.radiobuttonlist label{margin-top:0px;}
+.formlayout table.checkboxlist label, .formlayout table.radiobuttonlist label {font-weight:normal; width:auto; padding:0 15px 0 5px;}
+html > body .formlayout table.checkboxlist input, html > body .formlayout table.radiobuttonlist input{margin-top:2px;}
+/* radio & checkbox button */
+form.formlayout input.radio,.formlayout input.radio,form.formlayout input.checkbox,.formlayout input.checkbox{margin:3px 0px;}
+*html .formlayout span.radio input,*html .formlayout span.checkbox input{margin-top:3px;}
+html > body .formlayout span.radio input,html > body .formlayout span.checkbox input{margin-top:2px;}
+/* Main form button (usually Save and Cancel) */
+div.main-form-buttons{clear:both;border-top:1px solid #666666;padding-top:10px;margin-top:10px;}
+/* input element if validation fails */
+form.formlayout .invalidtxt,.formlayout .invalidtxt,.invalidtxt{background:#fff url(../images/ns/gradient_hGrid.png) repeat-x right -764px;border:1px solid #b5b8c8;font-size:93%;line-height:1em;padding:1px 3px;}
+/* Separating input field and other form elements */
+.formelements div{margin:4px 0;}
+.formelements br{clear:both;}
+/* New Form */
+div.button-container {margin-top:10px; border-top:1px solid #ccc; padding-top:5px;}
+label{margin-top:3px;}
+*html .formlayout label.checkbox,*html .formlayout label.radiobtn{margin-top:6px;width:auto;}
+html > body .formlayout label.checkbox,html > body .formlayout label.radiobtn{margin-top:3px;width:auto;}
+.formlayout label.radiobtn, .formlayout label.checkbox {font-weight:normal; width:auto; padding:0 15px 0 5px;}
+.requiredfield,div.errormsg,span.errormsg {color:#d83636;}
+/* Error Message */
+div.errormsg {margin-left:180px;}
+/* New Horizontal Form */
+.h-form label{width:auto;margin-left:3px;}
+.h-form span.form-textonly,.h-form .validtxt,.h-form select{margin:0px 3px;}
+.h-form span.divider, span.divider{color:#9c9fad; padding:0px 3px;}
+form.h-form input.validtxt,.h-form input.validtxt {height:1.50em;}
+form.h-form select, .h-form select {height:1.85em;}
+/* Nested Fieldset Highlights */
+form.formlayout fieldset fieldset.nestedfieldset,div.formlayout fieldset fieldset.nestedfieldset,div.datalayout fieldset fieldset.nestedfieldset {border:1px solid #c2d4e4; background-color:#e9f4ff;}
+html > body .formlayout .at-table{padding:1px;}
+.formlayout .at-table table{margin:0px;}
+/* BREADCRUMBS
+-------------------------------------------------------------------- */ 
+*html .breadcrumbs{height:1%;}
+html > body .breadcrumbs{overflow:hidden;}
+.breadcrumbs{padding:3px;margin:5px 0px;}
+.breadcrumbs a{font-weight:bold;}
+.breadcrumbs ul.h-list li{padding:0px;margin-right:0px;}
+/* VERTICAL FEED LAYOUT w/ IMAGE 
+-------------------------------------------------------------------- */
+.v-feed,.icon-hd{height:1%; overflow:hidden;}
+.v-feed img {float:left;margin-right:12px;}
+.icon-hd .calendarhd-icon {float:left;margin-right:5px;}
+.v-feed div.content,div.icon-hd div.content{height:1%; overflow:hidden;}
+/* GRAPHICAL HEADINGS
+-------------------------------------------------------------------- */
+.heading {color:#005480;font-size:130%;margin:9px 0px 5px 0px;padding:0px 2px 0px 0px;}
+div.icon-hd h3{color:#005480;font-size:130%;padding:0px; margin:0px;}
+div.icon-hd {border:1px solid #b2dcf2;background-color:#F4F8FC;margin-top:9px;padding:5px 0 0 3px;}
+.heading span.icon,div.icon-hd span.icon {background:transparent url(../images/ns/icon_grid2.png) no-repeat;height:34px;width:32px;}
+.ebook2-icon span.icon {background-position:left 0px;}
+.searchbook-icon span.icon {background-position:left -42px;}
+.edithd-icon span.icon{background-position:left -90px;}
+.mathhd-icon span.icon{background-position:left -130px;}
+.labhd-icon span.icon{background-position:left -170px;}
+.starburst-icon span.icon {background-position:left -210px;}
+.commentshd-icon span.icon {background-position:left -250px;}
+div.icon-hd .calendarhd-icon span.icon,.calendarhd-icon span.icon{background-position:left -290px;}
+.assignment-icon span.icon {background-position:left -330px;}
+/* Header Underline */
+.commentshd-icon a,.mathhd-icon a,.edithd-icon a,.labhd-icon a,.ebook2-icon a,.searchbook-icon a,.starburst-icon a {text-decoration:none;border-bottom:1px solid #005480;padding:0 2px 0 0;}
+/* SECTION HEADER TITLES
+-------------------------------------------------------------------- */
+*html div.sectionheader-grad, *html div.sectionheader, *html div.sectionheadernoline {height:1%;}
+div.sectionheader-grad[class],div.sectionheader[class], div.sectionheadernoline[class] {overflow:hidden;}
+div.sectionheader-grad:lang(en), div.sectionheader:lang(en), div.sectionheadernoline:lang(en) {overflow:hidden;}
+div.sectionheader, div.sectionheadernoline{margin:5px 0px;padding:3px 3px 2px 3px;}
+div.sectionheader {border-bottom:1px solid #ccc;}
+div.sectionheader-grad {border:1px solid #a7c7d1;background-color:#add1de;background-image:url(../images/ns/gradient_hGrid.png);background-repeat:repeat-x;background-position: left -160px;padding:3px;}
+div.sectionheader-left{float:left;font-weight:bold;line-height:1.85em;}
+div.sectionheader-left h1,div.sectionheader-left h2,div.sectionheader-left h3,div.sectionheader-left h4,div.sectionheader-left h5,div.sectionheader-left h6{margin:0px;}
+div.sectionheader-right{float:right;line-height:1.85em;}
+/* TABLE GRIDS
+-------------------------------------------------------------------- */
+/* Table Header */
+div.at-table table tr th,div.at-table table tr td table th{padding:3px 3px 2px 3px;}
+div.grid table thead tr th,div.grid table tr th,div.grid table tr td.thead,div.vgrid table tr th,div.hgrid table tr th,div.altgrid table tr th{font-weight:bold;vertical-align:top;background-color:#dbe4ee;line-height:1.55em;}
+/* Table body */
+div.at-table table tbody tr td{vertical-align:middle;padding:3px;}
+/* Table Sortable column */
+div.at-table table thead tr th.ascending-icon,div.at-table table thead tr th.descending-icon{background:#afd1df url(../images/ns/gradient_hGrid.png) right -80px;cursor:pointer;}
+div.at-table table thead tr th.ascending-icon .icon,div.at-table table thead tr th.descending-icon .icon{margin-top:-1px;}
+div.at-table table tr td table{font-size:100%;border:none;}
+div.at-table table tr td table th{border-right:none;}
+div.at-table table tr.oddrow td,div.at-table table tr.odd td{border:none;border-top:1px solid #DDD;border-bottom:1px solid #DDD;border-collapse:collapse;}
+div.at-table table tr.oddrow,div.at-table table tr.odd{background:#f4f4f4;}
+div.at-table table tr.highlightrow td{background:#dcf2e6;}
+div.at-table table tr.highlightrow td{border-top: 2px solid #a8d7bd;border-bottom: 2px solid #a8d7bd;border-collapse:collapse;}
+div.grid table,div.hgrid table,div.vgrid table,div.thead table{color:#333;background-color:#fff;}
+div.at-table table caption{background:#add1de url(../images/ns/gradient_hGrid.png) right -434px repeat-x;border:1px solid #a7c7d1;font-size:108%;color:#000;font-weight:bold;line-height:1.4em;padding-left:5px;}
+/*Table Grid*/
+div.grid table,div.grid table th,div.grid table td{border: 1px solid #c3cfdc;border-collapse:collapse;}
+div.grid table td{border: 1px solid #c3cfdc;border-collapse:collapse;}
+/* Table Horizontal Grid */
+div.hgrid table,div.hgrid table th{border: 1px solid #c3cfdc;border-collapse:collapse;}
+div.hgrid table td{border:none;border-bottom:1px solid #c3cfdc;border-collapse:collapse;}
+/* Table Vertical Grid */
+div.vgrid table,div.vgrid table th{border:1px solid #c3cfdc;border-collapse:collapse;}
+div.vgrid table td{border:none;border-right:1px solid #c3cfdc;border-collapse:collapse;}
+div.thead table,div.noborder table,div.noborder table th,div.noborder table td{border:none;}
+div.thead table tr th, div.thead table thead tr th{background:none; border:none; border-bottom:1px solid #c3cfdc;}
+div.altgrid table thead tr th{border-bottom:1px solid #c3cfdc;}
+div.altgrid table{border:1px solid #c3cfdc;}
+div.altgrid table tr.oddrow td{border:none;}
+/* ACCORDION
+-------------------------------------------------------------------- */
+ul.at-accordion{margin:0px;padding:0px;}
+#at-localnav ul.at-accordion,#at-inlinenav ul.at-accordion,#at-content ul.at-accordion{border-bottom:1px solid #cccccc;}
+#at-content ul.at-accordion{border-right:1px solid #cccccc;border-left:1px solid #cccccc;}
+ul.at-accordion li a{background-image:url(../images/ns/gradient_hGrid.png);background-position:left -680px;background-repeat:repeat-x;background-color:#ebecee;}
+ul.at-accordion li li a{background-image:none;background-color:transparent;}
+ul.at-accordion li ul{margin:0px;background-color:#FFFFFF;border-bottom:none;}
+ul.at-accordion li ul li a:hover{background:none;}
+ul.at-accordion li div.open ul li{background-image:none;background-color:#FFFFFF;list-style:square;padding:3px;padding-top:0px;margin-left:25px;margin-bottom:3px;border:none;vertical-align:top;}
+ul.at-accordion li ul li a{margin-top:-2px;}
+ul.at-accordion li a span.accordiontxtlabel{padding:3px;line-height:18px;font-weight:bold;display:-moz-inline-block;display:-moz-inline-box;display:inline-block;}
+ul.at-accordion li a.collapsedown span.icon,ul.at-accordion li a.collapseup span.icon{float:right;margin:2px 0px;overflow:hidden;cursor:pointer;}
+ul.at-accordion li div.open{border-top:1px solid #cccccc;background-color:#FFFFFF;}
+ul.at-accordion li div.open ul{margin:3px 3px 0px 3px;}
+ul.at-accordion li{border:none;border-top:#ccc 1px solid;border-collapse:collapse;}
+ul.at-accordion li a,ul.at-accordion li a:visited{display:block;line-height:18px;height:25px;text-decoration:none;color:#000;cursor:pointer;}
+ul.at-accordion li a:hover{background-color:#caddf5; background-image:url(../images/ns/gradient_hGrid.png);background-position:left -751px;background-repeat:repeat-x;}
+ul.at-accordion li a:hover .accordiontxtlabel{color:#3c5068;}
+ul.at-accordion li ul li a{line-height:normal;height:auto;text-decoration:none;border-bottom:none;}
+ul.at-accordion li ul li a:hover{text-decoration:underline;background-color:transparent;}
+ul.at-accordion li li a,ul.at-accordion li li a:visited{height:auto;}
+ul.at-accordion li { list-style:none;}
+/* Accordion Ellipsis */
+ul.at-accordion li a span.accordiontxtlabel{padding:3px;line-height:18px;font-weight:bold;float:left;white-space:nowrap;width:80%;overflow:hidden;-o-text-overflow:ellipsis;/*Opera 9*/ text-overflow:ellipsis;}
+/* BACK LINK
+-------------------------------------------------------------------- */
+.backlink{margin-top:10px;padding:3px; text-align:right;}
+/* Additions
+---------------------------------------------------------------------*/
+#messageheader{background-image:url(../images/ns/gradientblue.jpg); background-position:left 0px; background-color:#fff; background-repeat:repeat-x;}
+#menu_financial_literacy {margin-bottom:30px;}
+
+

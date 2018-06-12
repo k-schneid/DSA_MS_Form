@@ -1,0 +1,164 @@
+@charset "UTF-8";
+
+/* ui.all.css / jquery ui / bootstrap overrides */
+button,
+input,
+select,
+textarea {font-family:sans-serif; line-height:normal;}
+#aes-dock-calendar .aes-list li {line-height:18px;}
+#aes-dock-calendar-datepicker * {background:none; border:none; font-family:Arial,Helvetica,sans-serif; line-height:normal; margin:0; opacity:1; padding:0; text-align:center; width:auto;
+	border-radius:0;
+	-moz-border-radius:0;
+    -o-border-radius:0;
+    -webkit-border-radius:0;
+	-khtml-border-radius:0;
+}
+
+.ui-datepicker-inline {float:none;}
+
+/* icons */
+#aes-petsbar-iconspace .aes-pets-tool .aes-pets-icon.aes-calendar {background-position:-23px 0;}
+
+.aes-pets-dock > header #aes-calendar-header-control input[type="submit"] {
+	font-size: 1.0em;
+	color: #fff;
+	margin-top: 3px;
+	padding-left: 15px;
+	padding-right: 15px;
+	border:1px solid #0065ad; border-bottom-color:#0055aa;
+	background:#0075bb;
+}
+.aes-pets-dock > header #aes-calendar-header-control input[type="submit"]:focus {outline:2px solid #000 !important;}
+
+#aes-dock-calendar {height:100%; overflow:hidden; position:relative;}
+#aes-dock-calendar .aes-pets-messages {margin:0; padding:10px;}
+#aes-dock-calendar .aes-sectioned-list {max-height:200px;}
+
+#aes-dock-calendar #aes-calendar-notification {background-color: #fffcdc; border-bottom: 1px solid #ddd;}
+#aes-dock-calendar #aes-calendar-notification p {margin-bottom:0px;}
+#aes-dock-calendar #aes-calendar-notification em {font-weight: bold;}
+
+#aes-dock-calendar .aes-list .aes-calendar-item a {display:inline-block; font-size:.875em; width:100px; zoom:1;
+    *display:inline;
+}
+#aes-dock-calendar .aes-list .aes-calendar-item time {font-size:.75em;}
+#aes-dock-calendar-footer {position:absolute; bottom:0; left:0; right:0;}
+
+#aes-dock-calendar-notifications .aes-list .aes-calendar-item > div {width:190px; word-wrap:break-word;}
+#aes-dock-calendar-notifications .aes-list .aes-calendar-item > div > a {display:inline; width:100%;}
+
+#aes-dock-calendar-notification-list {border-bottom:1px solid #ccc;}
+#aes-dock-calendar-notification-list.noborder {border:none;}
+#aes-dock-calendar-notification-list .aes-calendar-item {overflow:hidden; padding:5px 15px;}
+#aes-dock-calendar-notification-list .aes-calendar-item header {overflow:hidden; width:195px;}
+#aes-dock-calendar-notification-list .aes-calendar-item header button {background:#f5f5f5; border:1px solid #707070; color:#707070; float:right; font-size:.6em; height:18px; line-height:6px !important; padding:2px 5px; overflow:hidden;
+    border-radius:2px;
+    -moz-border-radius:2px;
+    -o-border-radius:2px;
+    -webkit-border-radius:2px;
+	-khtml-border-radius:2px; /* for old Konqueror browsers */
+	filter: progid:DXImageTransform.Microsoft.gradient(enabled = false) !important;
+}
+#aes-dock-calendar-notification-list .aes-calendar-item header button:focus {outline: none !important; border:2px solid #005c95; background:#fff; color:#000;}
+#aes-dock-calendar-notification-list .aes-calendar-item header button:hover {background:#fff; border:1px solid #555; color:#000;}
+#aes-dock-calendar-notification-list .aes-calendar-item header time {color:#000; float:left; font-weight:bold;}
+#aes-dock-calendar-notification-list .aes-calendar-item .aes-recurring {float:left; margin-top:3px;}
+#aes-dock-calendar-notification-list .aes-calendar-item .aes-calendar-event-buttons {background:#0080cc !important; border-width:1px !important; display:inline-block; list-style:none; margin-top:3px;
+    background:-moz-linear-gradient(top, #42a2db 1%, #0080cc 5%);
+    background:-webkit-linear-gradient(top, #42a2db 1%, #0080cc 5%);
+    background:-o-linear-gradient(top, #42a2db 1%, #0080cc 5%);
+    border-radius:3px;
+    -moz-border-radius:3px;
+    -o-border-radius:3px;
+    -webkit-border-radius:3px;
+	-khtml-border-radius:3px; /* for old Konqueror browsers */
+	*display:inline;
+	zoom:1;
+}
+#aes-dock-calendar-notification-list .aes-calendar-item .aes-calendar-event-buttons,
+#aes-dock-calendar-notification-list .aes-calendar-item .aes-calendar-event-buttons button {border:0 solid #00629d;}
+#aes-dock-calendar-notification-list .aes-calendar-item .aes-calendar-event-buttons button {background:none !important; border-left-width:1px; color:#fff; font-size:.75em; height:25px !important; line-height:12px !important; margin:0; padding:5px 6px;}
+#aes-dock-calendar-notification-list .aes-calendar-item .aes-calendar-event-buttons li + li button {border-left-width:1px;}
+#aes-dock-calendar-notification-list .aes-calendar-item .aes-calendar-event-buttons li {display:inline-block;
+	*display:inline;
+	zoom:1;
+}
+#aes-dock-calendar-notification-list .aes-calendar-item.aes-disabled .aes-calendar-event-buttons {display:none;}
+#aes-dock-calendar-notification-list .aes-calendar-item .aes-loading {display:none; float:right;}
+#aes-dock-calendar-notification-list .aes-calendar-item.aes-disabled {opacity:.5; filter: alpha(opacity = 50);}
+#aes-dock-calendar-notification-list .aes-calendar-item.aes-disabled .aes-loading {display:block;}
+#aes-dock-calendar-notification-list .aes-calendar-item.aes-disabled a {color:#666; cursor:default; text-decoration:none;}
+#aes-dock-calendar-notification-list .aes-calendar-item.aes-disabled button,
+#aes-dock-calendar-notification-list.aes-compact .aes-sectioned-list-header {display:none;}
+
+#aes-dock-calendar-notification-list>ul {max-width:215px;}
+
+#aes-dock-calendar-events .aes-list {overflow:visible;}
+#aes-dock-calendar-events .aes-list-active {overflow:hidden; overflow-y:auto;}
+#aes-dock-calendar-events .aes-list-active:hover {overflow-y:auto;}
+#aes-dock-calendar-events .aes-list-active .ui-datepicker {width:100%;}
+#aes-dock-calendar-events #aes-dock-calendar-datepicker {border-bottom:1px solid #ccc;}
+#aes-dock-calendar-events .ui-datepicker-inline {font:13px arial,helvetica,clean,sans-serif; font-size:.875em; float:none !important;}
+#aes-dock-calendar-events .ui-datepicker {background-color:#fff; border:0; margin:0; padding:10px; position:relative;}
+#aes-dock-calendar-events .ui-datepicker,
+#aes-dock-calendar-events .ui-datepicker .ui-datepicker-calendar tr > td a {font-size:14px !important;}
+#aes-dock-calendar-events .ui-datepicker .ui-datepicker-calendar {border-collapse:separate; border:none; padding-left:5px;}
+#aes-dock-calendar-events .ui-datepicker .ui-datepicker-calendar thead > tr > th {font-size:12px !important;}
+#aes-dock-calendar-events .ui-datepicker .ui-datepicker-header {margin-bottom:4px; padding:.2em; position:relative; width:108px;}
+#aes-dock-calendar-events .ui-datepicker .ui-datepicker-title {color:#000; font-weight:bold; margin-left:20px; padding:0; text-align:left; text-transform:uppercase;}
+#aes-dock-calendar-events .ui-datepicker .ui-datepicker-prev, #aes-dock-calendar-events .ui-datepicker .ui-datepicker-next {direction:ltr; height:12px; cursor:pointer; position:absolute; text-indent:-9999px; top:5px; width:14px;}
+#aes-dock-calendar-events .ui-datepicker .ui-datepicker-prev {background:url(/te/pets-client-calendar/2.4.0/public/img/icon-arrow-left.png) no-repeat center; left:2px;}
+#aes-dock-calendar-events .ui-datepicker .ui-datepicker-prev:focus {outline: none !important; border: 2px solid #005c95; left:0px; top:3px;}
+#aes-dock-calendar-events .ui-datepicker .ui-datepicker-next {background:url(/te/pets-client-calendar/2.4.0/public/img/icon-arrow-right.png) no-repeat center; left:auto !important /* override from ui.all.css */; right:2px;}
+#aes-dock-calendar-events .ui-datepicker .ui-datepicker-next:focus {outline: none !important; border: 2px solid #005c95; right:0px; top:3px;}
+#aes-dock-calendar-events .ui-datepicker th, #aes-dock-calendar-events .ui-datepicker td {border:1px solid #fff; text-align:center;}
+#aes-dock-calendar-events .ui-datepicker th {color:#707070; font-size:12px; padding:0; text-align:center;}
+#aes-dock-calendar-events .ui-datepicker td {padding:5px 5px 5px 5px;}
+#aes-dock-calendar-events .ui-datepicker td a {color:#000; font-weight:bold;}
+#aes-dock-calendar-events .ui-datepicker .aes-has-events a {color:#005c95; text-decoration:underline!important;}
+#aes-dock-calendar-events .ui-datepicker td.ui-datepicker-other-month a {color:#707070; font-weight:normal; font-style:italic;}
+#aes-dock-calendar-events .ui-datepicker td:hover {background-color:#eee; cursor:pointer;}
+#aes-dock-calendar-events .ui-datepicker td a:focus,
+#aes-dock-calendar-events .ui-datepicker td:hover a {color:#000;}
+#aes-dock-calendar-events .ui-datepicker td.ui-datepicker-today,
+#aes-dock-calendar-events .ui-datepicker td.ui-datepicker-today.ui-datepicker-current-day {background-color:#0075bb !important; border: 1px solid #0075bb;}
+#aes-dock-calendar-events .ui-datepicker td.ui-datepicker-today a {background:none; color:#fff;}
+#aes-dock-calendar-events .ui-datepicker td.ui-datepicker-today a:focus {outline:2px solid #fff !important;}
+#aes-dock-calendar-events .ui-datepicker td.ui-datepicker-current-day {background-color:#ddd; border:1px solid #707070;}
+#aes-dock-calendar-events .ui-datepicker .ui-datepicker-buttonpane {left:170px; position:absolute; top:10px;}
+#aes-dock-calendar-events .ui-datepicker .ui-datepicker-current {background:none; border:none; color:#005c95; display:block; cursor:pointer; font-size:.875em; margin:0; padding:3px;}
+#aes-dock-calendar-events .ui-datepicker .ui-datepicker-current:hover {text-decoration:underline;}
+#aes-dock-calendar-events .ui-datepicker-calendar .ui-datepicker-current-day{font:1em arial,helvetica,clean,sans-serif !important; line-height:normal !important;}
+
+#aes-dock-calendar-event-list {width:100%;}
+#aes-dock-calendar-event-list h1,
+#aes-dock-calendar-event-list h2,
+#aes-dock-calendar-event-list h3 {font-size:.75em; padding:10px 10px 5px;}
+#aes-dock-calendar-event-list ul {min-width:230px;}
+#aes-dock-calendar-event-list ul li.aes-calendar-item {position:relative;}
+#aes-dock-calendar-event-list ul li.aes-calendar-item > time,
+#aes-dock-calendar-event-list ul li.aes-calendar-item > span {display:inline-block; vertical-align:top;}
+#aes-dock-calendar-event-list ul li.aes-calendar-item > time + span {margin:0 0 0 22px;}
+#aes-dock-calendar-event-list ul li.aes-calendar-item > time + span.aes-recurring {margin:3px 0 0 5px;}
+#aes-dock-calendar-event-list ul li.aes-calendar-item > time + span + span {margin-top:0;}
+#aes-dock-calendar-event-list ul li.aes-calendar-item > a {display:block; margin-left:10px; width:180px !important; word-wrap:break-word;}
+#aes-dock-calendar-event-list .aes-calendar-item {overflow:hidden; padding:5px 10px;}
+#aes-dock-calendar-event-list .aes-calendar-item span {color:#666; display:inline-block; font-size:.75em; font-weight:bold; margin:3px 0 0 5px; text-transform:uppercase;}
+#aes-dock-calendar-event-list .aes-calendar-item section {margin-left:5px; width:125px;}
+#aes-dock-calendar-event-list .aes-calendar-item section span {margin:0 5px 0 0;}
+#aes-dock-calendar-event-list .aes-calendar-item time {display:inline-block; text-align:right; vertical-align:top; width:55px;}
+#aes-dock-calendar-event-list .aes-calendar-events-allday {border:2px solid #CCC; border-width:2px 0; margin-top:3px;}
+#aes-dock-calendar-event-list .aes-calendar-events-allday time {text-transform:uppercase;}
+#aes-dock-calendar-event-list .aes-calendar-item .aes-calendar-event-buttons,
+#aes-dock-calendar-event-list .aes-calendar-item .aes-calendar-event-buttons button {border:0 solid #00629d;}
+#aes-dock-calendar-event-list .aes-calendar-item .aes-calendar-event-buttons button {background:none; border-left-width:1px; color:#fff; font-size:.75em; margin:0; padding:5px 6px;}
+#aes-dock-calendar-event-list .aes-calendar-item .aes-calendar-event-buttons li:first-child button {border-left-width:0;}
+#aes-dock-calendar-event-list .aes-calendar-item .aes-calendar-event-buttons li {display:inline;}
+
+#aes-dock-calendar .aes-footer-inner ul li time {font-size:0.675em; vertical-align:middle;}
+#aes-dock-calendar .aes-footer-inner ul li button {vertical-align:middle;}
+
+.aes-calendar-calc {width:50px; height:50px; overflow:scroll; position:absolute; top:-200px; left:-200px;}
+.aes-calendar-calc-inner {height:100px;}
+
+#aes-dock-calendar .aes-list .aes-calendar-item a:hover {text-decoration:underline !important;}

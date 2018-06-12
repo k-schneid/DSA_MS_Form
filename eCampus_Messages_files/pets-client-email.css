@@ -1,0 +1,43 @@
+#aes-petsbar-iconspace .aes-pets-tool .aes-pets-icon.aes-email {background-position:-46px 0;}
+
+.aes-pets-dock > header #aes-email-inbox-link-control input[type="submit"] {
+	font-size: 1.0em;
+	color: #fff;
+	margin-top: 3px;
+	padding-left: 15px;
+	padding-right: 15px;
+	border:1px solid #0065ad; border-bottom-color:#0055aa;
+	background:#0075bb;
+}
+.aes-pets-dock > header #aes-email-inbox-link-control input[type="submit"]:focus {outline:2px solid #000 !important;}
+#aes-dock-email #aes-email-notification {background-color: #fffcdc; border-bottom: 1px solid #ddd;}
+#aes-dock-email #aes-email-notification p {margin-bottom:0px;}
+#aes-dock-email #aes-email-notification em {font-weight: bold;}
+#aes-dock-email .aes-list {position:relative;}
+#aes-dock-email .aes-list-inner {position:absolute; height:100%; width:100%;}
+#aes-dock-email .aes-email-message {color:#666; border-top:1px solid #ddd; border-left: 4px solid transparent; min-height:36px; overflow:hidden; padding:9px 10px 9px 10px;}
+#aes-dock-email .aes-email-message:first-child {border-top:0;}
+#aes-dock-email .aes-email-message .aes-pets-email-header {overflow:hidden; margin-bottom:5px;}
+#aes-dock-email .aes-email-message .aes-pets-email-header h2.aes-pets-email-sender {color:#666; float:left; font-size:.75em; line-height:1em; font-weight:bold; overflow:hidden; text-overflow:ellipsis; width:120px; white-space:nowrap;}
+#aes-dock-email .aes-email-message .aes-pets-email-header .aes-pets-email-attributes {float:right; font-size:.875em; line-height:.8em;}
+#aes-dock-email .aes-email-message .aes-pets-email-header .aes-pets-email-attributes span {font-size:.8em;}
+#aes-dock-email .aes-email-message .aes-pets-email-header .aes-pets-email-attributes .aes-attachment {float:left;}
+#aes-dock-email .aes-email-message .aes-pets-email-message {word-wrap:break-word;}
+#aes-dock-email .aes-email-message .aes-pets-email-message .aes-pets-email-subject {display:inline; font-size:.875em; font-weight:normal; margin-right:.25em;}
+#aes-dock-email .aes-email-message .aes-pets-email-message > .aes-pets-email-subject > a {color:#666; font-weight:bold;}
+#aes-dock-email .aes-email-message .aes-pets-email-message > .aes-pets-email-subject > a:hover {text-decoration:underline !important;}
+#aes-dock-email .aes-email-message .aes-pets-email-message p {display:inline; font-size:.875em;}
+#aes-dock-email .aes-email-message.aes-unread .aes-pets-email-message > .aes-pets-email-subject > a {color:#005c95;}
+#aes-dock-email .aes-email-message.aes-unread {background-color:#fff; border-left: 4px solid #005c95;}
+#aes-dock-email .aes-email-message.aes-unread h2.aes-pets-email-sender {color:#353535;}
+
+#aes-dock-email .aes-list-inner > p {margin:0;}
+#aes-dock-email .aes-list-inner > p.aes-message-count {border-top:1px solid #ddd; font-size:.875em; padding:10px 15px;}
+#aes-dock-email .aes-list-inner > p.aes-message-count > a {color:#666;}
+#aes-dock-email .aes-list.aes-list-calc {overflow:scroll;}
+
+#aes-dock-email .aes-footer-inner ul li time {font-size:0.675em; vertical-align:middle;}
+#aes-dock-email .aes-footer-inner ul li button {vertical-align:middle;}
+
+.aes-email-calc {width:50px; height:50px; overflow:scroll; position:absolute; top:-200px; left:-200px;}
+.aes-email-calc-inner {height:100px;}

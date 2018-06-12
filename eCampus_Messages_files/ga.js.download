@@ -1,0 +1,141 @@
+var _uacct=""; //backward compatabilty
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+var pageTracker="";
+var gaID = "UA-817506-1";
+if (window.location.hostname.toUpperCase().indexOf("FAW") > -1)
+{
+gaID = "UA-4036309-1";
+}
+var metricsUrl = "http://metrics.phoenix.edu";
+if (location.protocol.toUpperCase().indexOf("HTTPS") > -1)
+{
+ metricsUrl = "https://smetrics.phoenix.edu";
+}
+
+apolloConfig.contextReady(function(){
+	require(["ncf-thirdparty/jquery-1.7.1/public/javascript/jquery"], function($) {	
+		$.ajax({
+		   type: "GET",
+		   url: gaJsHost + "google-analytics.com/ga.js",
+		   success: function() {
+            pageTracker = _gat._getTracker(gaID);
+            pageTracker._setDomainName(getDomain());
+            pageTracker._trackPageview();
+			pageTracker._trackPageLoadTime();
+            },
+		dataType: "script",
+		cache: true
+		});
+	});
+});
+
+
+
+function getDomain()
+{
+    var domain = window.location.hostname;
+    if(domain.toUpperCase().indexOf("APOLLOLIBRARY.COM") > -1)
+    {
+        domain = "apollolibrary.com";
+    }
+    else if(domain.toUpperCase().indexOf("MERITUSU.CA") > -1)
+    {
+        domain = "meritusu.ca";
+    }
+    else if(domain.toUpperCase().indexOf("WINTU.EDU") > -1)
+    {
+        domain = "wintu.edu";
+    }
+    else 
+    {
+        domain = "phoenix.edu";
+    }
+    return domain;
+}
+
+function customTracker(cat, label){
+    trackingLabel="/virtual/";
+    if(label)
+    {
+        trackingLabel += cat + "/" + label;
+    }
+    else
+    {
+        trackingLabel += cat;
+    }
+    pageTracker._trackPageview(trackingLabel);
+}
+
+function customVarTracker(slot,category,value,scope){
+     pageTracker._setCustomVar(
+      parseInt(slot),                   
+      category,     
+      value,               
+      parseInt(scope)                    
+     );
+	 
+     pageTracker._trackEvent('customVarSend','customVarSend','',0,true);
+}
+
+function urchinTracker(url){
+    //backward compatibility with legacy ga code
+    pageTracker._trackPageview(url);
+}
+
+function __utmSetVar(v) {
+    //backward compatibility
+}
+
+function loginGATrackFlashInterface(paramObj){	
+
+	var _label='',
+		_evtNm='',
+		_opt=false,
+		_cat='',
+		_val=0;		
+		
+	if(paramObj.label){
+		_label=paramObj.label;
+	}
+	if(paramObj.event){
+		_evtNm=paramObj.event;
+	}
+	if(paramObj.option){
+		if(paramObj.option=="true"||paramObj.option==true){
+			_opt=true;
+		}
+	}
+	if(paramObj.category){
+		_cat=paramObj.category;
+	}
+	if(paramObj.val){
+		_val=paramObj.val;
+	}
+
+	var GADetails={	tracker:pageTracker,
+				category:_cat,
+				eventName:_evtNm,
+				label:_label,
+				val:_val,
+				opt:_opt
+			};
+
+	loginGATrackEvent(GADetails);
+}
+
+function loginGATrackEvent(_obj){
+	if (_obj.tracker.length === 0) {
+        return;
+    }
+    try{
+		_obj.tracker._trackEvent(_obj.category, _obj.eventName, _obj.label,  _obj.val,_obj.opt);
+	} catch(e) {
+		console.log(e);	
+	}
+}
+
+
+setTimeout(function(){var a=document.createElement("script");
+var b=document.getElementsByTagName('script')[0];
+a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0011/8158.js?"+Math.floor(new Date().getTime()/3600000);
+a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);

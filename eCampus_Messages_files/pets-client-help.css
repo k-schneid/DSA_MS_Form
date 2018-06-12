@@ -1,0 +1,119 @@
+/* icons */
+#aes-petsbar-iconspace .aes-pets-tool .aes-pets-icon.aes-help {background-position:-69px 0; overflow:hidden; position:relative; text-indent:-1000px;}
+
+/****************************************************
+	icons
+****************************************************/
+.aes-pets-icon.aes-help-topics {background-position:-177px -17px; height:18px; width:14px;}
+.aes-pets-icon.aes-help-topics:hover {background-position:-177px 3px;}
+.aes-collapsed .aes-pets-icon.aes-help-topics {background-position:-198px -17px; height:18px; width:18px;}
+.aes-collapsed .aes-pets-icon.aes-help-topics:hover {background-position:-198px 3px;}
+
+
+/* link items */
+#aes-petsbar-iconspace #aes-pets-bar-aes-pets-helpwidget {margin-right:6px; padding-right:6px;}
+
+/****************************************************
+	help
+****************************************************/
+.aes-help {position:fixed;}
+.aes-help > header {background-image:url(../img/pet-draggable.png); background-position:center; background-repeat:no-repeat;}
+.aes-help > header.minimized {background-image:none;}
+.aes-help > header h1 {padding:3px; text-indent:-9999px;}
+.aes-help > header ul {top:1px;}
+
+/* help content */
+.aes-help ul {list-style:none; margin:0;}
+.aes-help #aes-help-content {font-size:0.875em; height:100%; overflow:hidden; position:relative;}
+
+/* breadcrumb control */
+.aes-help #aes-help-breadcrumb {border-bottom:1px solid #ccc; line-height:normal;}
+.aes-help #aes-help-breadcrumb ul {padding:10px;}
+.aes-help #aes-help-breadcrumb ul li {background:url(../img/icon-arrow-right.png) left no-repeat; display:inline-block; font-weight:bold; margin-right:10px; padding-left:20px;}
+.aes-help #aes-help-breadcrumb ul li:first-child {background:none; padding:0;}
+
+/* topic list */
+.aes-help #aes-help-topics {border-right:1px solid #999; height:100%; left:0; position:absolute; width:180px; z-index:10;
+	box-shadow:3px 0 3px #dbdbdb;
+	-moz-box-shadow:3px 0 3px #dbdbdb;
+	-o-box-shadow:3px 0 3px #dbdbdb;
+	-webkit-box-shadow:3px 0 3px #dbdbdb;}
+.aes-help #aes-help-topics .aes-pets-icon-button.aes-help-topics {position:absolute; right:-15px; top:2px; z-index:15;
+ 	border-radius:0 2px 2px 0;
+	-moz-border-radius:0 2px 2px 0;
+	-o-border-radius:0 2px 2px 0;
+	-webkit-border-radius:0 2px 2px 0;
+	-khtml-border-radius:0 2px 2px 0; /* for old Konqueror browsers */
+}
+.aes-help #aes-help-topics .aes-pets-icon-button.aes-help-topics:focus {outline:2px solid #005c95;}
+
+.aes-help #aes-help-topics.aes-collapsed {left:-175px;}
+.aes-help #aes-help-topics.aes-collapsed .aes-pets-icon.aes-help-topics {right:-19px;}
+.aes-help #aes-help-topics-nav {height:100%; width:100%;}
+/* more help */
+
+.aes-help #aes-help-morehelp-header {background:#f7f7f7; border-width:1px 0; border-color:#999; border-style:solid; color:#666; cursor:auto; font-size:0.95em; padding:16px 5px 16px 10px; }
+.aes-help #aes-help-morehelp-header > a {font-weight:bold;}
+/* topic list accordion */
+.aes-help #aes-help-topics-content {height:100%;}
+.aes-help #aes-help-topics-content .ui-accordion-header {background:#e6e6e6; border-width:1px 0; border-color:#999; border-style:solid; color:#666; cursor:pointer; font-size:0.75em; padding:6px 5px 6px 10px; text-transform:uppercase;}
+.aes-help #aes-help-topics-content .ui-accordion-header:focus {border:2px solid #005c95!important; padding:5px 3px 5px 8px;}
+.aes-help #aes-help-topics-content .ui-accordion-content {background-color:#f7f7f7; font-size:0.875em; padding:10px;}
+.aes-help #aes-help-topics-content .ui-accordion-content li {display:inline-block; margin-bottom:5px; position:relative; width:160px;
+	*display:inline;
+	zoom:1;
+}
+.aes-help #aes-help-topics-content .ui-accordion-content li > a {display:inline-block; max-width:150px; padding: 0 5px 0 0;
+    *display:inline;
+    zoom:1;
+}
+#aes-help-topics-content  li > span.aes-pets-newwindow {position:relative; right:auto; vertical-align:top;}
+.aes-help #aes-help-topics-content .ui-accordion-content > ul > li > a {color:#666}
+.aes-help #aes-help-topics-content .ui-accordion-content > ul ul {margin:5px 0 0 10px;}
+.aes-help #aes-help-topics-content .ui-accordion-content li.aes-selected > a {color:#000; cursor:default; font-weight:bold; text-decoration:none;}
+.aes-help #aes-help-topics-content .ui-accordion-content > a {border-top:1px solid #999; display:block; margin-top:10px; padding-top:10px;}
+
+/* help article */
+.aes-help #aes-help-main {bottom:0; left:0; position:absolute; right:0; top:37px; overflow:hidden;}
+.aes-help #aes-help-main > #aes-help-article {position:absolute; height:100%; left:180px; right:0; z-index:1;}
+.aes-help #aes-help-main > #aes-help-article.aes-collapsed {left:5px;}
+.aes-help #aes-help-main > #aes-help-article div,
+.aes-help #aes-help-main > #aes-help-article iframe {border:none; height:100%; width:100%;}
+html.mobileSafari .aes-help #aes-help-main > #aes-help-article div {overflow-y:auto; -webkit-overflow-scrolling:touch;}
+
+/* overlay */
+.aes-help #aes-help-overlay {bottom:3px; left:8px; overflow:hidden; position:absolute; right:20px;}
+.aes-help #aes-help-overlay .aes-help-overlay-panel {background-color:#333; color:#ddd; padding:10px;}
+
+/* feedback */
+.aes-help #aes-help-feedback {float:left; font-size:.875em; min-width:255px; overflow:hidden; position:relative;}
+.aes-help #aes-help-feedback form p {display:inline; line-height:2em; margin:0 10px 0 0;}
+.aes-help #aes-help-feedback form input[type="button"],
+.aes-help #aes-help-feedback form input[type="submit"] {background:#333; border:1px solid #ddd; border-left-width:0; color:#ddd; cursor:pointer; font-size:0.875em; margin:0; padding:5px;}
+.aes-help #aes-help-feedback form input[type="button"]:first-child,
+.aes-help #aes-help-feedback form input[type="submit"] {border-left-width:1px;}
+.aes-help #aes-help-feedback form input[type="button"]:hover, 
+.aes-help #aes-help-feedback form input[type="button"].aes-selected,
+.aes-help #aes-help-feedback form input[type="submit"]:hover {background-color:#111;}
+.aes-help #aes-help-feedback form input[type="button"]:focus,
+.aes-help #aes-help-feedback form input[type="submit"]:focus {outline:2px solid #1ea9fc!important;}
+.aes-help #aes-help-feedback form section {display: none; height:0; padding-right:2px; width:255px;}
+.aes-help #aes-help-feedback form section label {display:block; margin-top:5px;}
+.aes-help #aes-help-feedback form section textarea {display:block; height:2em; margin:3px 0; resize:none; width:100%;}
+.aes-help #aes-help-feedback form section textarea:focus {outline:2px solid #1ea9fc!important;}
+.aes-help #aes-help-feedback form section input[type="submit"] {
+	text-shadow:none;
+	-moz-text-shadow:none;
+	-webkit-text-shadow:none;
+	-o-text-shadow:none;
+	border-radius:0;
+	-moz-border-radius:0;
+	-webkit-border-radius:0;
+	-o-border-radius:0;
+	-khtml-border-radius:0; /* for old Konqueror browsers */
+}
+.aes-help #aes-help-feedback form section.aes-show {display: block}
+.aes-help #aes-help-feedback form section.aes-active {display: block; height:80px; width:405px;}
+.aes-help #aes-help-feedback a.aes-close-light {margin:0; position:absolute; right:10px; top:12px;}
+.aes-help #aes-help-feedback a.aes-close-light:focus {outline:2px solid #1ea9fc;}
+.aes-help #aes-help-top {float:right; margin-left:5px; text-align:center;}

@@ -1,0 +1,15 @@
+//Preventing The IE6 CSS Background Flicker
+//try { document.execCommand('BackgroundImageCache', false, true); } catch(e) {}
+/*Use Object Detection to detect IE6*/
+	var  m = document.uniqueID /*IE*/
+	&& document.compatMode  /*>=IE6*/
+	&& !window.XMLHttpRequest /*<=IE6*/
+	&& document.execCommand ;/*IE*/
+
+	try{
+		if(!!m){
+			m("BackgroundImageCache", false, true) /* = IE6 only */ 
+		}
+
+	}catch(oh){};
+

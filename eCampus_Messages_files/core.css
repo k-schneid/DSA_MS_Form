@@ -1,0 +1,83 @@
+@charset "utf-8";
+*html{filter:expression(document.execCommand("BackgroundImageCache",false,true));}
+/* CLEARING FLOATS
+-----------------------------------------------*/
+/* Clearing floats - Hat Tip: http://www.positioniseverything.net/easyclearing.html  */
+.clearfix:after {content: ".";display: block;height: 0;clear: both;visibility: hidden;}
+.clearfix {display: inline-block;}
+/* Hides from IE-mac \*/
+* html .clearfix {height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */
+a,a:visited,a:link{color:#094a72; text-decoration:underline;}
+/* date and print section inside bd */
+.at-datebox{text-align:right;margin:0; margin-top:-12px;padding:8px 0px;line-height:1.0em;color:#666;}
+div#at-header {background-color:#9a0a01;}
+div#at-banner{height: 5.85em;position:relative;overflow:hidden;background:#9a0a01 url(../images/ns/hd-flamebg.jpg) repeat-x; background-position:top;}
+/* GENERAL 
+---------------------------------------*/
+.skipnav{display:none;}
+/* p {font-size:1em;line-height:1.539;margin:0 0 0.769em;} */
+p {font-size:1em;line-height:1.3;margin:0 0 0.769em;} 
+/* LOGO */
+div#at-logo,div#at-logo a,div#at-logo h1,div#at-logo h1 a{display:block;overflow:hidden;}
+div#at-logo{width:auto;float:left;border:none;}
+div#at-logo{text-indent:-9999px;}
+/* HEADERS 
+--------------------------------------------------- */
+h1, h2, h3, h4, h5, h6{font-family:Arial, Helvetica, sans-serif;;}
+h1{font-size:1.6em;line-height:1.2;margin:0.917em 0 0.292em;}
+h1{margin-top:10px;}
+h2{font-size:1.4em;line-height:1.2em;margin:.7em 0 .2em;}
+h3{font-size:1.25em;line-height:1.2em;margin:.5em 0 .2em;}
+h4{font-size:1.15em;line-height:1.2em;margin:.5em 0 .2em;}
+h5{font-size:1.05em;line-height:1.2em;margin:.5em 0 .2em;}
+h3, legend{font-weight:bold;margin:.5em 0 .2em;}
+.bannerTitle {font-size:195%;margin-top:4px;display:block;}
+/* TOP NAV */
+div#at-topnav {text-align:right;padding:8px 10px 5px 0;width: auto;float:right;font-size:92%;color: #fff;}
+div#at-topnav a {padding:0 4px;margin-right: 0;color: #fff;font-size:100%;text-decoration:none;}	
+.linkBox {padding:2px;margin:2px 0;text-align:center;display:inline-block;color:#a93939;}
+.welcomeBox {padding:2px;margin:2px 6px;display:inline-block;}
+/* BODY
+---------------------------------------------- */
+*html div#bd{height:350px;}/* IE6 min height for content body */
+html > body div#bd{min-height:350px;}/* Newer Browsers min height for content body */
+body {background:#c5cad1 url(../images/ns/gradient_hGrid.png) repeat-x;margin:0px; background-position: left -240px;font-family: Arial, Helvetica, sans-serif;}
+#bd {padding:12px 12px 12px 12px;background-color:#fff}
+#doc4 .homecontainer{background-color:#ececec;}
+/* FOOTER 
+---------------------------------------------- */
+*html #ft{height:1%;}
+html > body #ft{overflow:hidden;}
+#ft{background-color:#F5F5F5;border-bottom:solid 1px #DADADA;border-top:solid 1px #DADADA;clear:both;}
+div#at-footer {margin: 0px 11px 4px 11px;padding: 8px 0px;line-height: 1.5;	text-align: left;font-size:90%;color:#697681}
+div#at-footer a {text-decoration:none;}
+div#at-footer .right{text-align:left;padding:4px 6px 4px 6px;}
+div#at-footer .dude-icon {line-height:1.0em;color:#697681} /* supplemental to icon style */
+#at-copyright{clear:both;}
+/* TABLE STRUCTURE
+--------------------------------------------------*/
+table{margin-bottom:0px;}
+table,th,td,div.at-table table,div.at-table table th,div.at-table table td{border:none;}
+/* Safari 3:100% Table width 
+body:first-of-type .at-tablegrid table, body:first-of-type div.at-table table{width:100%;}*/
+caption,th{text-align:left;}
+/* FireFox & Opera:100% Table width -- Keep the information below in the right order */
+/**html div.at-table table{table-layout:auto;}  1st - IE 6*/
+*html div.at-table table{table-layout:fixed;}/* IE6 */
+div.at-table[class] table{width:100%; border-collapse:collapse;}/* FF */
+/*div.at-table:lang(en) table{width:100%;} */
+div.at-table:first-child+html table{width:auto;}/* IE 7*/
+div.at-table:first-child{table-layout:fixed;width:auto;} /* 4rd - Opera */
+body:first-of-type .at-tablegrid table, body:first-of-type div.at-table table{width:100%;}/*Safari 3*/
+/* GLOBAL CLASSES
+------------------------------------------------------*/
+.left{float:left;}
+.right{float:right;}
+/* PRINT
+-----------------------------------------------------*/
+div#at-logo img{display:none;}
+/* FORM VALIDATION
+-----------------------------------------------------*/
+div.errormsg,span.errormsg{display:none;}

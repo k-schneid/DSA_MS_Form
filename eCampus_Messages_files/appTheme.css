@@ -1,0 +1,117 @@
+/* core/appElements.css misspelling fix in Theme */
+.forumlistpanel .at-panelcontainer{border-right:1px solid #0a5481;border-left:1px solid #0a5481}
+/* HEADER
+-------------------------------------------------------*/
+div#at-logo a{display:block;overflow:hidden;background:url(../images/uop-logo.png) no-repeat 12px 2px;}
+div#at-logo, div#at-logo a, div#at-logo h1, div#at-logo h1 a{width:225px;height:75px;}
+/* PARENT TABSEST 
+-------------------------------------------------------*/
+.at-tabs li.active em.tab-left, .at-tabs li.active a.tab-right,.at-tabs li.active .tab-inner,.at-tabs ul, #hd .at-tabs, .at-tabs ul li,.at-tabs, .at-tabs li.at-selected em.tab-left, .at-tabs li.at-selected a.tab-right, .at-tabs li.at-selected .tab-inner {background-image:url(../images/tab-grid.png);}
+.at-tabs ul li {background-color:transparent;}
+#hd .at-tabs li.active a,.at-tabs li.active a, #hd .at-tabs li.at-selected a,.at-tabs li.at-selected a{color:#FFF;}
+.at-tabs li a {color:#002b42;border-right:1px solid #acbfcf;}
+.at-tabs li.active em.tab-left, .at-tabs li.active a.tab-right,.at-tabs ul li, .at-tabs li.at-selected em.tab-left, .at-tabs li.at-selected a.tab-right{background-repeat:no-repeat;}
+#hd .at-tabs,.at-tabs{background-position:left -220px;background-repeat:repeat-x;}
+.at-tabs ul{background-position:left -0px;}
+#hd .at-tabs ul, #hd .at-tabs ul li,.at-tabs ul li,.at-tabs ul{background-image:none;}
+#hd .at-tabs li.active a.tab-right, #hd .at-tabs li.at-selected a.tab-right{background-position:right -0px;border-right:none;color:#FFFFFF;}
+#hd .at-tabs li.active em.tab-left, #hd .at-tabs li.at-selected em.tab-left{background-position:left -70px;color:#fff;}
+#hd .at-tabs li.active .tab-inner,.at-tabs li.active .tab-inner, #hd .at-tabs li.at-selected .tab-inner, .at-tabs li.at-selected .tab-inner{background-color:#084f7c;background-repeat:repeat-x; background-position:left -140px;}
+/* TABSET 2 
+-------------------------------------------------------*/
+.tabset2 ul, .tabset2 ul li, .tabset2 li.active .tab-inner {background-image:url(../images/gradient_hGrid.png);}
+.tabset2 {background-image:none;}
+.tabset2 ul {background-position:left -130px;padding-left:10px;}
+.tabset2 ul li {background-color:transparent;background-image:none;}
+.tabset2 li a{color:#666;border-right:1px solid #666;}
+.tabset2 li.active a.tab-right {background:transparent none repeat;padding:0;}
+.tabset2 li.active em.tab-left {background-image:none;padding:0; background-color:#fff;}
+.tabset2 li.active .tab-inner {color:#064976;}
+.tabset2 li.active .tab-inner {background:transparent none repeat;}
+.tab-strip-spacer {background-color:#064976;}
+/* NAV2 
+---------------------------------------------- */
+div#at-nav2 {background-color:#064976;}
+div#at-nav2 ul{color:#fff;}
+div#at-nav2 span.nav2Welcome{color:#fff;}
+div#at-nav2 select{font-size:80%;}
+div#at-nav2 a {color: #FFF;}
+/* Course Dropdown */
+#nav2backgroundicon .coursedropdown{float:left; position:relative;}
+#nav2backgroundicon .slide-down{margin-left:5px;margin-top:2px; margin-bottom:2px; width:145px;}
+#nav2backgroundicon .slide-down a{padding:2px;border:1px solid #346d99; color:#fff;background:#036;line-height:normal;font-size:85%;}
+#nav2backgroundicon .slide-down a.btn-slide{text-decoration:none;}
+#nav2backgroundicon .dd-menu-lst{display:none;position:absolute; z-index:333px; border:1px solid #333;color:#333;background: #fff;margin-left:5px;font-size:85%; width:145px;}
+#nav2backgroundicon .dd-menu-lst a{color:#069;padding:6px; display:block; border-top:1px solid #fff; border-bottom:1px solid #fff;clear:both; width:133px;}
+#nav2backgroundicon .dd-menu-lst a:hover{color:#008bd1; background-color: #eff4fa; border-top:1px solid #dbe1e7; border-bottom:1px solid #dbe1e7;clear:both;}
+#nav2backgroundicon .dd-menu-lst li{color:#fff;clear:both; float:none; line-height:0px;padding:0px;}
+#nav2backgroundicon .dd-menu-lst ul{margin:0px;padding:0px;}
+.ipaneltitle{background-color:#dbe1e7; color:#5f666e; font-weight:bold;padding:3px;}
+/* BUTTON COLORS 
+--------------------------------------------------*/
+/* Light Blue Action Buttons */
+span.login-btn,span.submit-btn,span.search-btn,span.edit-btn, span.save-btn,  span.accept-btn, span.withdraw-btn,span.addcomments-btn, span.mgmtcomments-btn,span.post-btn,span.reply-btn,span.register-btn, span.publish-btn,span.email-btn,span.upload-btn,span.preview-btn,span.add-btn,span.apply-btn{padding:0px; border:1px solid #599ec2; background-color:#d9e6f4;background-position:0px -1950px; background-repeat:repeat-x;}
+span.login-btn span.btn-rightside,span.submit-btn span.btn-rightside, span.accept-btn span.btn-rightside, span.search-btn span.btn-rightside,span.edit-btn span.btn-rightside,span.save-btn span.btn-rightside, span.withdraw-btn span.btn-rightside,span.addcomments-btn span.btn-rightside,span.mgmtcomments-btn span.btn-rightside,span.post-btn span.btn-rightside,span.reply-btn span.btn-rightside,span.register-btn span.btn-rightside,span.publish-btn span.btn-rightside,span.email-btn span.btn-rightside,span.upload-btn span.btn-rightside,span.preview-btn span.btn-rightside,span.add-btn span.btn-rightside,span.apply-btn span.btn-rightside{background:none;padding:0px;}
+span.login-btn button,span.submit-btn button, span.accept-btn button, span.search-btn button,span.edit-btn button,span.save-btn button,span.withdraw-btn button,span.addcomments-btn button,span.mgmtcomments-btn button,span.post-btn button,span.reply-btn button,span.register-btn button,span.publish-btn button,span.email-btn button,span.upload-btn button,span.preview-btn button,span.add-btn button,span.apply-btn button{background:none;padding:0px;}
+span.login-btn span.btn-text,span.submit-btn span.btn-text, span.accept-btn span.btn-text, span.search-btn span.btn-text,span.edit-btn span.btn-text,span.save-btn span.btn-text,span.withdraw-btn span.btn-text,span.addcomments-btn span.btn-text,span.mgmtcomments-btn span.btn-text,span.post-btn span.btn-text,span.reply-btn span.btn-text,span.register-btn span.btn-text,span.publish-btn span.btn-text,span.email-btn span.btn-text,span.upload-btn span.btn-text,span.preview-btn span.btn-text,span.add-btn span.btn-text,span.apply-btn span.btn-text{color:#064976;}
+span.login-btn button.no-icon,span.submit-btn button.no-icon,span.search-btn button.no-icon,span.edit-btn button.no-icon,span.save-btn button.no-icon,span.withdraw-btn button.no-icon,span.addcomments-btn button.no-icon,span.mgmtcomments-btn button.no-icon,span.post-btn button.no-icon,span.reply-btn button.no-icon,span.register-btn button.no-icon,span.publish-btn button.no-icon,span.email-btn button.no-icon,span.upload-btn button.no-icon,span.preview-btn button.no-icon,span.add-btn button.no-icon,span.apply-btn button.no-icon{padding:0px;}
+/* Gold Action Buttons */
+span.update-btn,span.openwindow-btn,span.comment-btn,span.login-btn,span.edit-btn,span.addnote-btn{padding:0px; border:1px solid #ff9600; background-color:#ffe976;background-position:0px -614px; background-repeat:repeat-x;}
+span.update-btn span.btn-rightside,span.openwindow-btn span.btn-rightside,span.comment-btn span.btn-rightside,span.addnote-btn span.btn-rightside{background:none;padding:0px;}
+span.update-btn button,span.openwindow-btn button,span.comment-btn button,span.addnote-btn button{background:none;padding:0px;}
+span.update-btn span.btn-text,span.openwindow-btn span.btn-text,span.comment-btn span.btn-text,span.addnote-btn span.btn-text{color:#006699;}
+span.update-btn button.no-icon,span.openwindow-btn button.no-icon,span.comment-btn button.no-icon,span.addnote-btn button.no-icon{padding:0px;}
+/* Default Gray Buttons */
+span.cancel-btn, span.decline-btn, span.next-btn,span.previous-btn,span.default-btn,span.previous-btn,span.next-btn,span.search-btn,span.addphoto-btn,span.continue-btn,span.filter-btn,span.print-btn,span.delete-btn,span.close-btn,span.remove-btn,span.disabled-btn{padding:0px; border:1px solid #999999; background-color:#e7e7e6;background-position:0px -696px; background-repeat:repeat-x;}
+span.cancel-btn span.btn-rightside, span.decline-btn span.btn-rightside, span.next-btn span.btn-rightside,span.previous-btn  span.btn-rightside,span.default-btn span.btn-rightside,span.search-btn span.btn-rightside,span.addphoto-btn span.btn-rightside,span.continue-btn span.btn-rightside,span.filter-btn span.btn-rightside,span.print-btn span.btn-rightside,span.delete-btn span.btn-rightside,span.close-btn span.btn-rightside,span.remove-btn span.btn-rightside,span.disabled-btn span.btn-rightside{background:none;padding:0px;}
+span.cancel-btn button, span.decline-btn button, span.next-btn button,span.previous-btn button,span.default-btn button,span.search-btn button,span.addphoto-btn button,span.continue-btn button,span.filter-btn button,span.print-btn button,span.delete-btn button,span.close-btn button,span.remove-btn button,span.disabled-btn button{background:none;padding:0px;}
+span.cancel-btn span.btn-text, span.decline-btn span.btn-text, span.next-btn span.btn-text,span.previous-btn span.btn-text,span.default-btn span.btn-text,span.search-btn span.btn-text,span.addphoto-btn span.btn-text,span.continue-btn span.btn-text,span.filter-btn span.btn-text,span.print-btn span.btn-text,span.delete-btn span.btn-text,span.close-btn span.btn-text,span.remove-btn span.btn-text{color:#000;}
+span.cancel-btn button.no-icon,span.next-btn button.no-icon,span.previous-btn button.no-icon,span.default-btn button.no-icon,span.search-btn button.no-icon,span.addphoto-btn button.no-icon,span.continue-btn button.no-icon,span.filter-btn button.no-icon,span.print-btn button.no-icon,span.delete-btn button.no-icon,span.close-btn button.no-icon,span.remove-btn button.no-icon{padding:0px;}
+/* Red Header Contact */
+span.contactus-btn{padding:0px; border:1px solid #af2d0d;background:#8d0f01;}
+span.contactus-btn span.btn-rightside, span.contactus-btn button {background:none;padding:0px;}
+span.contactus-btn span.btn-text {color:#fff;}
+span.contactus-btn button.no-icon {padding:0px;}
+/* ICON LIST BKG
+--------------------------------------------------*/
+.menulist{background-color:#eaf3ff;clear:both;}
+/* FORM STYLE
+--------------------------------------------------*/
+form.formlayout fieldset fieldset.nestedfieldset,div.formlayout fieldset fieldset.nestedfieldset,div.datalayout fieldset fieldset.nestedfieldset {border:1px solid #c2d4e4; background-color:#e9f4ff;}
+/*style added for dropdown*/
+#classident{background:#003366 none repeat scroll 0 0;border:none!important;color:#FFF}
+/* Philippe - AUG 5 2010 - Custom Grid */
+*html .at-gf, *html .at-gb{height:1%}
+html > body .at-gf,html > body .at-gb{overflow:hidden}
+.at-g .at-u{float:right;width:49.1%}
+.at-g .at-first{float:left}
+.at-gf .at-u{width:74.2%;margin-left:1.99%}
+.at-gf .at-first{width:24%;margin-left:0}
+.at-gb .at-u{width:32%;float:left;margin-left:1.99%}
+.at-gb .at-first{margin-left:0}
+/* Philippe - AUG 5 2010 - additional icons 32px */
+.heading span.icon, div.icon-hd span.icon{background:transparent url(../images/icon_grid2.png) no-repeat;height:34px;width:32px}
+.ebook2-icon span.icon{background-position:left 0}
+.searchbook-icon span.icon{background-position:left -42px}
+.edithd-icon span.icon{background-position:left -90px}
+.mathhd-icon span.icon{background-position:left -130px}
+.labhd-icon span.icon{background-position:left -170px}
+.starburst-icon span.icon{background-position:left -210px}
+.commentshd-icon span.icon{background-position:left -250px}
+div.icon-hd .calendarhd-icon span.icon, .calendarhd-icon span.icon{background-position:left -290px}
+.assignment-icon span.icon{background-position:left -330px}
+.myaccount-icon span.icon{background-position:left -370px}
+.payments-icon span.icon{background-position:left -410px}
+.coursescontracts-icon span.icon{background-position:left -450px}
+.mygrading-icon span.icon{background-position:left -490px}
+.hrforms-icon span.icon{background-position:left -530px}
+.facrespublication-icon span.icon{background-position:left -570px}
+.facdevelopment-icon span.icon{background-position:left -610px}
+.hrresources-icon span.icon{background-position:left -650px}
+.accountsettings-icon span.icon{background-position:left -690px}
+.follow-icon span.icon{background-position:left -734px}
+.unfollow-icon span.icon{background-position:left -774px}
+.qmark-icon span.icon{background-position:left -814px}
+.pdfdoc-icon span.icon{background-position:left -850px}
+/* ol list - Philippe - Sept 8 2010 */
+div.msg ol li{list-style-type:decimal;margin-bottom:0}

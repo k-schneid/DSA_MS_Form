@@ -1,0 +1,144 @@
+@charset "utf-8";
+html {
+  color: #333333;
+  background: #e4e4e4;
+}
+body {
+  background: #f7f7f7;
+}
+legend {
+  color: #000000;
+}
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: #0099cc;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+caption {
+  display: none;
+}
+time {
+  color: #999;
+  font-size: 0.8em;
+  font-weight: normal;
+}
+html {
+  background-color: #e4e4e4!important;
+}
+html body {
+  background-image: none!important;
+  background-color: #f7f7f7!important;
+}
+html body #bd {
+  background-color: transparent!important;
+}
+.at-panel {
+  background-color: #fff;
+}
+.yui-gf .campusnewspanel .at-panel,
+.aes-page-login .at-panel {
+  background-color: transparent;
+}
+.yui-gf .myclasses-tab #classescontainer {
+  background-color: #fff;
+}
+#wFeedbackForm fieldset {
+  background-color: #fff;
+}
+#classroom.grades .at-panel.navpanel a:link,
+#classroom.grades .at-panel.navpanel a:visited,
+#classroom.grades .at-panel.navpanel a:hover,
+#classroom.grades .at-panel.navpanel a:active,
+#classroom.grades .at-panel.navpanel a:hover {
+  text-decoration: underline;
+}
+#classroom.grades a:link,
+#classroom.grades a:visited,
+#classroom.grades a:active,
+#classroom.grades a:hover {
+  text-decoration: underline;
+}
+#classroom.grades a.email2-icon:link,
+#classroom.grades a.email2-icon:visited,
+#classroom.grades a.email2-icon:active,
+#classroom.grades a.email2-icon:hover {
+  text-decoration: none;
+}
+#classroom.grades a.alert-icon:link,
+#classroom.grades a.alert-icon:visited,
+#classroom.grades a.alert-icon:active,
+#classroom.grades a.alert-icon:hover {
+  text-decoration: none;
+}
+div#at-nav2 {
+  background-color: transparent!important;
+}
+#aspnetForm .yui-t2.temp33 #yui-main div.at-table table {
+  background-color: transparent!important;
+}
+#aspnetForm .yui-t2.temp33 #yui-main div.thead2 table tr td {
+  background-color: transparent!important;
+}
+#aspnetForm[action=SelectCampus] .yui-t2.temp33 #yui-main .yui-b {
+  margin-left: 0;
+}
+#aspnetForm .yui-t2 #yui-main fieldset {
+  border: none;
+}
+#aspnetForm .yui-t2 #yui-main fieldset#ctl00_contentColumn_frm {
+  border: 1px solid #C2D4E4;
+}
+#aspnetForm .yui-t2 #yui-main .formlayout fieldset {
+  border: 1px solid #C2D4E4;
+}
+#aspnetForm .yui-t2 #yui-main #PrintIssueFix_None #contractDetailsHolder {
+  position: relative;
+  z-index: 0;
+}
+#aspnetForm .yui-t2 #yui-main #PrintIssueFix_None #contractDetailsHolder .button.print-btn.right {
+  position: absolute;
+  z-index: 0;
+  right: 0;
+  top: -50px;
+}
+#aspnetForm .yui-t2 #yui-main .yui-ge .yui-u.first > h1 {
+  font-size: 21px;
+}
+#jive-wrapper {
+  background-color: #f7f7f7!important;
+}
+div.jive-box {
+  background-color: #fff;
+}
+#jive-wrapper #jive-body-intro .jive-body-tabcurrent,
+#jive-wrapper #jive-body-intro .jive-body-tabcurrent:hover {
+  background-color: #f7f7f7;
+}
+#yui-main .error-maintenance-msg {
+  background: url(../../images/error-msg.png) no-repeat transparent 352px 0;
+}
+#activity-stream-error-msg div.errormessage {
+  background: url(../../images/error-msg.png) no-repeat transparent 0 0;
+}
+#aspnetForm fieldset legend {
+  position: absolute !important;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 0 !important;
+  width: 0 !important;
+  overflow: hidden !important;
+  display: block !important;
+}
+.aes-ui-wide .pageLayoutPar .twocolumn .hd-bkg {
+  background: none!important;
+}
+#classroomDiscussion #doc3,
+#classroom.grades #doc3 {
+  width: auto;
+}

@@ -1,0 +1,9 @@
+/****************************************************
+	pets bar
+****************************************************/
+#aes-petsbar > ul > li.aes-selected > div[role="button"] {background-color:#600;}
+
+#aes-header-tools > li,
+#aes-header-tools > li > nav#aes-petsbar > ul > li:nth-child(1):after {border-color:#4d0100;} /* Pets Dock outer border color */
+#aes-header-tools > li > *,
+#aes-header-tools > li > nav#aes-petsbar > ul > li:nth-child(1) {border-color:#ae3533;} /* Pets Dock inner border color */

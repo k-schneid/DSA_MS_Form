@@ -1,0 +1,125 @@
+/****************************************************
+	chat
+****************************************************/
+.aes-chat {overflow:hidden; display: none; position:fixed;}
+.aes-chat > header > h1 {max-width:70%; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+.aes-chat .aes-pets-chat-content {border-bottom:1px solid #ddd; *+border-bottom:none /* IE7 only */; font-size:.875em; height:200px; overflow:auto;}
+html.mobileSafari .aes-chat .aes-pets-chat-content {-webkit-overflow-scrolling:touch;}
+.aes-chat .aes-pets-chat-content + .aes-field {*+border-top:1px solid #ddd /* IE7 only */;}
+.aes-chat .aes-pets-chat-content .aes-pets-chat-messages {padding:10px;}
+.aes-chat .aes-pets-chat-content .aes-pets-chat-message {padding-top:10px; word-wrap:break-word;}
+.aes-chat .aes-pets-chat-content .aes-pets-chat-message:first-child {padding-top:0;}
+.aes-chat .aes-pets-chat-content .aes-pets-chat-message .aes-pets-chat-from {clear:left; float:left; font-weight:bold; margin-right:.25em;}
+.aes-chat .aes-pets-chat-content .aes-pets-chat-message .aes-pets-chat-date {clear:both; color:#777; font-size:.857em; padding-top:3px;}
+.aes-chat .aes-pets-chat-content .aes-pets-chat-notification {font-size:0.875em; font-style:italic;}
+.aes-chat .aes-pets-chat-content .aes-pets-chat-section-header {border-top:1px solid #ccc; margin-top:10px;}
+.aes-chat .aes-pets-chat-content .aes-pets-chat-section-header:first-child {border-top:none; margin-top:0; padding-top:0;}
+.aes-chat .aes-pets-chat-content .aes-pets-progress {color:#777; min-height:2em; padding:0 10px 10px;}
+
+/* tabs */
+.aes-chat .aes-chat-tab-link:focus {outline:2px solid #005c95;}
+.aes-chat.aes-minimized .aes-chat-tab-link:focus {outline:2px solid #1ea9fc;}
+
+/* chat input */
+.aes-chat #aes-chat-chatmessagearea .aes-field {padding:10px 16px 0 10px}
+.aes-chat #aes-chat-chatmessagearea .aes-field textarea {border:1px solid #ddd; font-size:.875em; height:30px; padding:3px; resize:none; width: 100%;}
+
+/* footer */
+.aes-chat > footer {background-color:#eee; border-top:1px solid #ddd;
+	box-shadow:0 5px 5px -5px #ddd inset;
+	-moz-box-shadow:0 5px 5px -5px #ddd inset;
+	-o-box-shadow:0 5px 5px -5px #ddd inset;
+	-webkit-box-shadow:0 5px 5px -5px #ddd inset;}
+.aes-chat > footer ul {list-style:none; margin:0;}
+.aes-chat > footer ul li {border-right:1px solid #ddd; border-left:1px solid #eee; float:left; position:relative; z-index:1;}
+.aes-chat > footer ul li a {display:inline-block;}
+.aes-chat > footer ul li a img {margin:6px 6px 2px;}
+.aes-chat > footer ul li.aes-selected {background-color:#fff; margin-top:-1px; padding-top:1px;}
+.aes-chat > footer ul li.aes-pets-chat-unread {background-color:#007fc4; border-left-color:#007fc4;}
+.aes-chat > footer ul li .aes-presence {border:1px solid #fff; bottom:5px; float:none; height:7px; margin:0; position:absolute; right:5px; width:7px; z-index:1;
+	border-radius:1px;
+	-moz-border-radius:1px;
+	-o-border-radius:1px;
+	-webkit-border-radius:1px;
+	-khtml-border-radius:1px; /* for old Konqueror browsers */
+}
+.aes-chat .aes-presence{margin:2px 5px 0 0;}
+
+/* minimized */
+.aes-chat.aes-minimized header,
+.aes-chat.aes-minimized .aes-pets-chat-content,
+.aes-chat.aes-minimized form {display:none;}
+.aes-chat.aes-minimized > footer {
+	background-color:#333;
+	background:-moz-linear-gradient(left top, #333 1%, #111 100%) repeat 0 0 transparent;
+	background:-webkit-linear-gradient(left top, #333 1%, #111 100%) repeat 0 0 transparent;
+	background:-o-linear-gradient(left top, #333 1%, #111 100%) repeat 0 0 transparent;}
+.aes-chat.aes-minimized > footer ul li {border-right:1px solid #000; border-left:1px solid #3a3a3a;}
+.aes-chat.aes-minimized > footer ul li.aes-selected {background-color:transparent; margin-top:0; padding:0;}
+.aes-chat.aes-minimized > footer ul li.aes-selected.aes-pets-chat-unread {background-color:#007fc4;}
+
+/* contacts */
+.aes-chat #aes-chat-contactswidget {display:none;}
+.aes-chat .aes-form-buttons {padding:5px 10px; border-top:1px solid #ddd; overflow:hidden;}
+
+/* contacts capsules */
+.aes-invitation-module {border-bottom:1px solid #ccc; font-size:0.75em; padding:5px 10px; position:relative; max-height:81px;}
+.aes-invitation-module p {margin-bottom:3px;}
+.aes-invitation-module ul {list-style:none; margin:0;}
+.aes-invitation-module ul li {background-color:#ddd; border:1px solid #bbb; float:left; height:25px; margin:0 3px 3px 0; padding-right:6px;
+	border-radius:2px;
+	-moz-border-radius:2px;
+	-o-border-radius:2px;
+	-webkit-border-radius:2px;
+	-khtml-border-radius:2px; /* for old Konqueror browsers */
+}
+.aes-invitation-module ul li .aes-user-name {cursor:default; display:inline-block; float:left; margin-top:4px; max-width:8em; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+.aes-invitation-module ul li button {background-color:transparent; border:none; border-right:1px solid transparent; cursor:pointer; display:inline-block; float:left; height:25px; margin:0 6px 0 0; padding:7px 8px 8px 7px;}
+.aes-invitation-module ul li button .aes-presence {margin:0 !important;}
+.aes-invitation-module ul li:hover button,
+.aes-invitation-module ul li button:focus {border-color:#bbb; padding:3px 1px 2px 2px;}
+.aes-invitation-module ul li:hover button .aes-presence,
+.aes-invitation-module ul li button:focus .aes-presence {background:transparent url(/te/pets-client-core/2.6.0/public/img/pet-icongrid.png) -257px -16px no-repeat; border-color:transparent; height:20px; width:20px;}
+
+/* group chat */
+#aes-pets-chatwidget * {filter:"progid:DXImageTransform.Microsoft.gradient(enabled=false)"; min-height:0px;}
+#aes-pets-chatwidget > header {padding:0 3px 0 0; z-index:6000 !important;}
+#aes-pets-chatwidget > header > ul {position:absolute; right:auto; text-align:right; width:100%;}
+#aes-pets-chatwidget > header > ul > li {position:relative; vertical-align:middle;}
+#aes-pets-chatwidget > header > ul > li + li {padding-right:3px;}
+#aes-pets-chatwidget > header > ul > li#aes-chat-group-button {left:3px; position:absolute; text-align:left;}
+#aes-pets-chatwidget > header > ul > li#aes-chat-group-button > .aes-selection-header {margin-left:5px;}
+#aes-pets-chatwidget > header > ul > li#aes-chat-group-button > #aes-group-chat-users-list {margin:5px 0 0 0; width:299px !important;
+	border:1px solid #ccc\9;
+    box-shadow:0 2px 6px #b1b1b1;
+    -moz-box-shadow:0 2px 6px #b1b1b1;
+    -o-box-shadow:0 2px 6px #b1b1b1;
+    -webkit-box-shadow:0 2px 6px #b1b1b1;
+}
+#aes-pets-chatwidget > header > ul > li#aes-chat-group-button #aes-groupname-div {font-size: 0.75em; cursor:pointer;}
+#aes-pets-chatwidget > header > ul > li#aes-chat-group-button > #aes-group-chat-users-list > #group-chat-users-list {background:#fff; max-height:145px; overflow-x:hidden; overflow-y:auto;}
+#aes-pets-chatwidget > header > ul > li#aes-chat-group-button > #aes-group-chat-users-list > .aes-contacts,
+#aes-pets-chatwidget > header > ul > li#aes-chat-group-button > #aes-group-chat-users-list > .aes-contacts > .aes-list > .aes-contacts-list > ul > li.aes-user > .aes-user-friendable {max-width:none;}
+#aes-pets-chatwidget > header > ul > li#aes-chat-group-button > #aes-group-chat-users-list > .aes-contacts > .aes-list > .aes-contacts-list > ul > li.aes-user { display:block;}
+#aes-pets-chatwidget > header > ul > li#aes-chat-group-button > #aes-group-chat-users-list > .aes-contacts > .aes-list > .aes-contacts-list > ul > li.aes-user:nth-child(odd) {background:#f7f7f7;}
+#aes-pets-chatwidget > header > ul > li#aes-chat-group-button > #aes-group-chat-users-list > .aes-contacts > .aes-list > .aes-contacts-list > ul > li.aes-user:hover > .aes-user-friendable > .aes-user-links {width:auto !important;}
+#aes-pets-chatwidget > header > ul > li#aes-chat-group-button > #aes-group-chat-users-list > .aes-contacts > .aes-list > .aes-contacts-list > ul > li.aes-user > .aes-pets-icon {margin-right:5px;}
+#aes-pets-chatwidget > header > ul > li#aes-chat-group-button > #aes-group-chat-users-list > .aes-contacts > .aes-list > .aes-contacts-list .aes-pets-messages {color:#333;}
+
+#aes-pets-chatwidget li.aes-user .aes-user-friendable > h2,
+#aes-pets-chatwidget li.aes-user .aes-user-friendable > p.aes-user-presence-text,
+#aes-pets-chatwidget li.aes-user .aes-user-friendable > .aes-user-links {width:210px; overflow:hidden; text-overflow:ellipsis;}
+#aes-pets-chatwidget li.aes-user:hover .aes-user-friendable > h2,
+#aes-pets-chatwidget li.aes-user:hover .aes-user-friendable > p.aes-user-presence-text,
+#aes-pets-chatwidget li.aes-user:hover .aes-user-friendable > .aes-user-links {width:185px;}
+
+#aes-pets-chatwidget .aes-list > .aes-list-footer {min-width:305px;}
+
+#aes-pets-chatwidget > #aes-window-clientarea-aes-pets-chatwidget {position:relative; top:0 !important;}
+#aes-pets-chatwidget #aes-window-footer-aes-pets-chatwidget .aes-window li a img {height:25px; width:25px;}
+#aes-pets-chatwidget #aes-window-footer-aes-pets-chatwidget .aes-pets-icon.aes-add {background-position:-216px -17px; }
+#aes-pets-chatwidget #aes-window-footer-aes-pets-chatwidget .aes-window li a img.aes-add {height:23px; width:24px; margin:0;}
+#aes-pets-chatwidget #aes-window-footer-aes-pets-chatwidget .aes-pets-icon-button.aes-add {margin:6px 7px;}
+#aes-pets-chatwidget #aes-window-footer-aes-pets-chatwidget .aes-pets-icon.aes-add:hover {background-position:-216px 3px;}
+#aes-pets-chatwidget #aes-window-footer-aes-pets-chatwidget .aes-selected .aes-pets-icon.aes-add {background-position:-280px 19px; height:26px; width:26px;}
+#aes-pets-chatwidget.aes-minimized #aes-window-footer-aes-pets-chatwidget .aes-pets-icon.aes-add {background-position:-216px -56px; height:24px; width:24px;}

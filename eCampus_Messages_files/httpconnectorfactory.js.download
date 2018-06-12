@@ -1,0 +1,144 @@
+define([ 'ncf-thirdparty/jquery-1.7.1/public/javascript/jquery' ], function ($) {
+	var defaults = {
+		'uriData' : {},
+		'serverData' : {}
+	};
+	var mash = function (templateStr, o) {
+		return templateStr.replace(/\{([^{}]*)\}/g, function (a, b) {
+			var r = o[b];
+			return typeof r === 'string' ? r : a;
+		});
+	};
+	var toObject = function (e) {
+		var o = {};
+		var a = $(e).serializeArray();
+		$.each(a, function () {
+			if (o[this.name] !== undefined) {
+				if (!o[this.name].push) {
+					o[this.name] = [o[this.name]];
+				}
+				o[this.name].push(this.value || '');
+			} else {
+				o[this.name] = this.value || '';
+			}
+		});
+		return o;
+	};
+
+	/* url can be a url or a form element ... */
+	var HttpConnector = function (url, config) {
+		// config is maintained fort duration of this object and serves as defaults for requests
+		var req = {
+			url : url,
+			type : 'GET',
+			contentType: 'application/x-www-form-urlencoded'
+		};
+		config = $.extend({}, defaults, config || {});
+		if (config['data.ready']) {
+			req.success = function (d) {
+				config['data.ready'](undefined, d);
+			};
+			req.error = function (e) {
+				config['data.error'](e);
+			};
+		}
+
+		/*
+			instance method, arguements are variable depending on how called,
+			prototypal convenience methods delegate
+		*/
+		if (config.contentType) {
+			req.contentType = config.contentType;
+		}
+		this.send = function () {
+		
+			var c = arguments[0], m = arguments[1], cb = arguments[2], isForm = false;
+			
+			if ($.isFunction(arguments[0])) {
+				c = {};
+				m = arguments[1];
+				cb = arguments[2];
+			}
+
+
+			req = $.extend(req, config || {}, c);
+			/*
+			console.log('.........' + c);
+			if (c.dataType) {
+				req.dataType = c.dataType;
+			}
+			if (c.contentType) {
+				req.contentType = c.contentType;
+			}*/
+			if (url.tagName && url.tagName.toLowerCase() === 'form') {
+				isForm = true;
+				req.url = url.getAttribute('action');
+				req.type = url.getAttribute('method' || 'GET');
+				req.contentType = url.getAttribute('enctype') || req.contentType;
+
+				/* support json or application/json */
+				req.data = (req.contentType.indexOf('json') !== -1) ? toObject(url) : $(url).serialize();
+				
+			}
+			else {
+				
+				req.type = m;
+			}
+			if (!cb && !config['data.ready']) {
+				cb = function () {
+					return arguments;
+				};
+			}
+			if (cb) {
+				req.success = function (d) {
+					cb(undefined, d);
+				};
+				req.error = function (e) {
+					cb(e);
+				};
+			}
+			else if (config['data.ready']) {
+				req.success = function (d) {
+					c['data.ready'](undefined, d);
+				};
+				req.error = function (e) {
+					c['data.error'](e);
+				};
+			}
+
+			req.data = ($.extend({}, req.data, config.serverData, (c || {}).serverData));
+			if (req.contentType.indexOf('json') !== -1) {
+				req.data = JSON.stringify(req.data);
+			}
+			
+			req.url = mash(req.url, $.extend({}, config.uriData, (c || {}).uriData));
+			return (function () {
+				var deferred = $.Deferred();
+				$.when($.ajax(req)).then(function (o, status, x) {
+					var err = null;
+					if (status !== 'success') {
+						err = x;
+					}
+					deferred.resolve(err, o);
+				});
+				return deferred.promise();
+			}());
+		};
+	};
+	HttpConnector.prototype.get = function (conf, cb) {
+		return this.send(conf, 'GET', cb);
+	};
+	HttpConnector.prototype.post = function (conf, cb) {
+		return this.send(conf, 'POST', cb);
+	};
+	HttpConnector.prototype.put = function (conf, cb) {
+		return this.send(conf, 'PUT', cb);
+	};
+
+	return {
+		createHttpConnector : function (url, config) {
+			
+			return new HttpConnector(url, config);
+		}
+	};
+});

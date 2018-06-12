@@ -1,0 +1,10 @@
+define([ 'ncf-thirdparty/jquery-1.7.1/public/javascript/jquery' ], function ($) {
+	return {
+		createDeferred : function () {
+			return $.Deferred();
+		},
+		when : function (promise) {
+			return $.when(promise);
+		}
+	};
+});

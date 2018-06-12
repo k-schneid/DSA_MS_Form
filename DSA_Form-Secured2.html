@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+	<link rel="stylesheet" href="./DSA_Form-SecuredPreview2.css" type="text/css">
+	<title>DSA Form - Secured</title>
+</head>
+
+<body>
+
+<!-- BEGIN DSA SELF-IDENTIFY FORM -->
+		<div align="left" class="dsa-form">
+			
+			<form class="dsa-wf" action="https://apollogrp--DSAapp.cs68.my.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
+			<input type=hidden name="orgid" value="00D1D0000009Azw"/>
+			<input type=hidden name="retURL" value="https://www.phoenix.edu/students/disability-services.html"/>
+					<div class="rfa-notes">
+						<h2>Request for Accommodations</h2>
+						<p>The University of Phoenix is committed to providing equal access to all courses, programs, services and activities.
+						In accordance with federal law, we assist students with temporary or permanent medical conditions and other diagnoses that may qualify them for accommodations.
+						You must fill out this form to request accommodations. While it is the first step, it connects you to a disability services advisor who will work with you to determine possible accommodations.
+						</p><br>
+					</div>
+					<fieldset>
+					<!-- <legend> Request for Accommodations Form </legend> -->
+					<h3>Student Information</h3><br>
+				<!-- Remove 'Size=[#]' attributes for all input tags from SF-->
+				<div class="dsa-form-row">
+					<div class="dsa-form-col">
+						<label for="00N1D000000SzkQ">*Full Name:</label>
+                        <br>
+                        <input  id="00N1D000000SzkQ" maxlength="255" name="00N1D000000SzkQ" type="text" required/>
+					</div>
+					<div data-tip="IRN can be found in Name menu at top-right of eCampus" class="dsa-form-col">
+						<label for="00N1D000000TneY">IRN: </label>
+                        <br>
+                        <input  id="00N1D000000TneY" maxlength="10" name="00N1D000000TneY" type="text"/>                      
+                    </div>
+					<div data-tip="The email address you prefer to be contacted at" class="dsa-form-col">
+						<label for="email">*Email:</label><br>
+                        <input  id="email" maxlength="80" name="email" type="text" required/>
+                   </div>
+                   
+                   <div class="dsa-form-col">
+						<label for="phone">Phone:</label><br>
+                        <input  id="phone" maxlength="40" name="phone" type="text"/>
+					</div>
+				</div>
+                
+                <div class="dsa-form-row">
+					<!--  ADS_Diagnosis Field -->
+					<label for="00N1D000000Tndk">*What is your diagnosis?</label><br>
+						<p style="margin-right:105px;margin-bottom:15px">Please list all diagnoses and limitations.</p>
+						<textarea  id="00N1D000000Tndk" name="00N1D000000Tndk" rows="3" type="text" wrap="soft" required></textarea>
+                </div>
+                
+                <div class="dsa-form-row">						
+					<!--  ADS_Diagnosis Impact Field -->	
+					<label for="00N1D000000SzlE">Explain how your diagnosis affects you in class or while doing course work.</label><br> 
+						<textarea  id="00N1D000000SzlE" name="00N1D000000SzlE" rows="3" type="text" wrap="soft"></textarea>
+                        
+                 </div>
+                 
+                 <div class="dsa-form-row">
+					<!--  ADS_Request Explanation Field -->
+					<label for="00N1D000000TnTL">*Why are you requesting assistance? </label><br>
+                    <p> Reasonable accommodations are designed to provide you an equal opportunity to demonstrate what you have learned.</p>
+						<textarea  id="00N1D000000TnTL" name="00N1D000000TnTL" rows="3" type="text" wrap="soft" required></textarea>
+                 </div>
+				 
+                 <div class="dsa-form-row">
+					<!--  ADS_Accommodations Requested Field -->				 
+					<label for="00N1D000000TnUE">What accommodations are you requesting?</label><br>
+					<p>Students often request extra time to complete their work. Are there other accommodations you have used in the past or would like to request?</p><br>
+						<textarea  id="00N1D000000TnUE" name="00N1D000000TnUE" rows="3" type="text" wrap="soft"></textarea><br>
+                        
+                 </div>
+                 
+                 <div class="dsa-form-row">
+					<!--  ADS_Assistive Technology Field -->					
+					<label for="00N1D000000SzlO">Do you use assistive technology?</label><br>
+					<select  id="00N1D000000SzlO" name="00N1D000000SzlO" title="Do you use assistive technology?">
+							<option value="">--None--</option>
+							<option value="Yes">Yes</option>
+							<option value="No">No</option>
+						</select><br>
+                        
+                 </div>
+                 
+                 <div class="dsa-form-row">
+					<!--  ADS_Assistive Technology Details Field -->
+					<label for="00N1D000000TnWj">If yes, what technology do you use?</label><br>
+                    <textarea  id="00N1D000000TnWj" name="00N1D000000TnWj" rows="3" type="text" wrap="soft"></textarea><br>
+                    
+                </div>
+                
+                <div class="dsa-form-row">
+				<!--  ADS_Request Comments Details Field -->
+					<label for="00N1D000000U2Bo">Any other comments or concerns?</label><br>
+					<textarea  id="00N1D000000U2Bo" name="00N1D000000U2Bo" rows="3" type="text" wrap="soft"></textarea><br>
+                </div>
+                <p><strong> * </strong> Indicates required field. </p>
+					<input type="hidden"  id="subject" maxlength="80" name="subject" type="text" value="Accommodations Request"/>
+                    <input type="hidden"  id="description" maxlength="80" name="description" type="text" value=" "/>
+					<input type="hidden"  id="recordType" name="recordType" value="0121D000000CjlC"/>
+					<input type="hidden"  id="external" name="external" value="1"/>
+					<br>                    
+                    <!-- Add class to define button styling -->
+					<div align="center" class="frm-btn">
+						<input type="submit" name="submit">
+					</div>
+					<br>
+			</form>
+			
+		</div>
+<!-- END DSA SELF-IDENTIFY FORM -->
+
+</body>
+</html>

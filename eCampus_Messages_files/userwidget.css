@@ -1,0 +1,93 @@
+@charset "utf-8";
+#aes-header-tools #divUserWidget {
+  z-index: 5000;
+  position: relative;
+}
+#aes-header-tools #userwidget-header:focus {
+  outline:2px solid #79cbfc!important;
+}
+#aes-header-tools #divUserWidget.aes-selected > ul {
+  display: block;
+}
+#aes-header-tools #divUserWidget > ul.uwidgetdisplaynone {
+  display: none;
+}
+#aes-header-tools #divUserWidget > ul.uwidgetdisplay {
+  display: block;
+}
+#aes-header-tools #divUserWidget .aes-dropdown-header {
+  cursor: pointer;
+  line-height: 18px;
+  margin-left: 10px;
+}
+#aes-header-tools #divUserWidget .aes-dropdown-header div {
+  background-image: url(/te/ux-core/public/images/arrow_down_white_alpha_small.png);
+  background-position: right center;
+  background-repeat: no-repeat;
+  margin-right: 12px;
+  padding: 10px 20px 10px 6px;
+}
+#aes-header-tools #divUserWidget .aes-dropdown-header div span {
+  font-weight: normal;
+  font-size: 14px;
+  color: #fff;
+  text-transform: capitalize;
+}
+#aes-header-tools #divUserWidget .aes-dropdown-header div img {
+  height: 25px;
+  margin: -6px 0;
+  padding-right: 10px;
+  vertical-align: middle;
+  width: 25px;
+}
+#aes-header-tools #divUserWidget #userwidget-menu {
+  background: #fff;
+  position: absolute;
+  margin: 0;
+  min-width: 0;
+  right: 1px;
+  top: 100%;
+  width: 200px;
+  z-index: 1301;
+  -webkit-box-shadow: 0px 1px 2px 1px rgba(74, 74, 74, 0.2);
+  -moz-box-shadow: 0px 1px 2px 1px rgba(74, 74, 74, 0.2);
+  box-shadow: 0px 1px 2px 1px rgba(74, 74, 74, 0.2);
+}
+#aes-header-tools #divUserWidget #userwidget-menu > li {
+  color: #094a72;
+  display: block;
+  font-size: 14px;
+}
+#aes-header-tools #divUserWidget #userwidget-menu > li > a {
+  display: block;
+  padding: 5px 15px;
+  color: #000;
+}
+#aes-header-tools #divUserWidget #userwidget-menu > li > a:link,
+#aes-header-tools #divUserWidget #userwidget-menu > li > a:visited,
+#aes-header-tools #divUserWidget #userwidget-menu > li > a:hover,
+#aes-header-tools #divUserWidget #userwidget-menu > li > a:active,
+#aes-header-tools #divUserWidget #userwidget-menu > li > span {
+  color: #000;
+}
+#aes-header-tools #divUserWidget #userwidget-menu > li > a:focus,
+#aes-header-tools #divUserWidget #userwidget-menu > li > span:focus{
+	outline:2px solid #005c95!important;
+}
+#aes-header-tools #divUserWidget #userwidget-menu > li.aes-user-identifier {
+  border-bottom: 1px solid #ddd;
+}
+#aes-header-tools #divUserWidget #userwidget-menu > li.aes-user-identifier > span {
+  display: block;
+  padding: 10px 15px;
+}
+#aes-header-tools #divUserWidget #userwidget-menu > li.aes-logout > a {
+  border-top: 1px solid #ddd;
+  background-color: #f7f7f7;
+  margin-top: 5px;
+  padding: 10px 15px;
+}
+#aes-header-tools #userwidget-menu {
+  border: 1px solid #ddd;
+  border-top: none;
+}

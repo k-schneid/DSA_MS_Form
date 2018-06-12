@@ -1,0 +1,224 @@
+/* CSS CLASS LEGEND */
+/* 
+rfa-notes: main/heading content of page section (before form)
+dsa-form: over arching form/content container
+dsa-wf: actual webform from Salesforce
+frm-btn: controls for web form buttons 
+*/
+
+
+/* Request for accommodation page heading/intro */
+.rfa-notes div {
+	width: 75%;
+}
+
+.rfa-notes h2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+.rfa-notes h3 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.25em;
+	font-weight: bold;
+	padding: 0.35em;
+	margin: 0.35em;
+}
+
+.rfa-notes p {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	display: inline-block;
+	float: left;
+	clear: left;
+	text-align: left;
+	width: 90%;
+	word-wrap: normal;
+}
+
+/* Make demographic info columns */
+.dsa-form-col {
+    float: left;
+    width: 50%;
+	margin:5px 0px;
+}
+
+.dsa-form-row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/**/
+
+.dsa-form-row {
+    width:100%;
+	margin: 15px 0px 25px;
+}
+
+.dsa-form {
+	width: 100%;
+	float: left;
+}
+
+.dsa-form h3 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.25em;
+	font-weight: bold;
+	padding-top: 0.25em;
+	padding-bottom: 0.25em;
+	margin: 0em;
+}
+
+.dsa-wf form {
+	width: 100%;
+	padding-top: 0.25em;
+	padding-bottom: 0.25em;
+	margin: 0.1em;
+	display: block;
+}
+
+.dsa-wf fieldset {
+	width: 80%;
+    display: block;
+    -webkit-margin-start: 2px;
+    -webkit-margin-end: 2px;
+    -webkit-padding-before: 0.35em;
+    -webkit-padding-start: 0.75em;
+    -webkit-padding-end: 0.75em;
+    -webkit-padding-after: 0.625em;
+    min-width: -webkit-min-content;
+    border-width: 2px;
+    border-style: groove;
+    border-color: threedface;
+    border-image: initial;
+}
+
+.dsa-form-row textarea:required {
+	/* background: red; */
+	border: 1px solid #FF0000;
+	
+}
+
+.dsa-form-row input:required {
+	border: 1px solid #FF0000;
+	
+}
+
+.dsa-wf input, textarea, select {
+	width: 75%;
+	border: 1px solid #000000;
+	margin: 0.15em;
+	display: block;
+	float: left;
+	text-align: left;
+	padding-top: 0.1em;
+	padding-bottom: 0.25em;
+}
+
+.dsa-wf textarea {
+	overflow: auto;
+	overflow-x: hidden;
+}
+
+.dsa-form-row label {
+	font-size: 1em;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	display: block;
+    float: left;
+    clear: left;
+	text-align: left;
+    width: 80%;
+	padding-top: 0.35em;
+	padding-bottom: 0.15em;
+}
+
+.dsa-form-row p {
+	font-size: 0.9em;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	/* display: inline-block; */
+    float: left;
+    clear: left;
+	text-align: left;
+	/* margin: 0em; */
+    /* width: auto; */
+}
+
+
+.frm-btn {
+	/* padding: 1em; */
+	/* margin: 0.5em; */
+	width: 75%;
+	/* float: left; */
+}
+
+.frm-btn input {
+	width: 5em;
+	border: 1px ridge #DE3518;
+	border-radius: 4px;
+	font-weight: bold;
+	/* background: #008000; */
+	/* display: block; */
+	padding: 0.2em;
+	clear: left;
+}
+
+
+[data-tip] {
+	position:relative;
+
+}
+[data-tip]:before {
+	content:'';
+	/* hides the tooltip when not hovered */
+	display: none;
+	content: '';
+	display: none;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-bottom: 5px solid #1a1a1a;
+	position: absolute;
+	top: 55px;
+	left: 35px;
+	z-index: 8;
+	font-size: 0;
+	line-height: 0;
+	width: 0;
+	height: 0;
+	position: absolute;
+	top: 30px;
+	left: 35px;
+	z-index: 8;
+	font-size: 0;
+	line-height: 0;
+	width: 0;
+	height: 0;
+}
+
+[data-tip]:after {
+	display: none;
+	content: attr(data-tip);
+	position: absolute;
+	top: 55px;
+	left: 0px;
+	padding: 5px 8px;
+	background: #1a1a1a;
+	color: #fff;
+	z-index: 9;
+	font-size: 0.75em;
+	font-family: Arial, Helvetica, sans-serif;
+	height: 1.1em;
+	line-height: 1.1em;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	white-space: nowrap;
+	word-wrap: normal;
+}
+
+[data-tip]:hover:before,
+[data-tip]:hover:after {
+	display:block;
+}

@@ -1,0 +1,256 @@
+/* icons */
+#aes-petsbar-iconspace .aes-pets-tool .aes-pets-icon.aes-contacts {background-position:0 0;}
+
+/****************************************************
+	contacts
+****************************************************/
+/* global */
+.aes-contacts p {margin:0;}
+
+/* selection */
+.aes-selection {margin:0; padding:0;}
+.aes-selection .aes-selection-header {border:1px solid transparent; cursor:pointer; margin-bottom:-1px; position:relative;}
+.aes-selection .aes-selection-header:hover {border-color:#ccc;}
+.aes-selection .aes-selection-header div {background-position:right center; padding-right:20px;}
+.aes-selection > ul {background-color:#fff; border:1px solid #ccc; display:none; font-size:1em; list-style:none; margin:0; position:absolute;}
+.aes-selection > ul > li {color:#333; cursor:pointer; display:block; padding:4px 10px; text-decoration:none;}
+.aes-selection > ul > li:hover {background-color:#eee;}
+.aes-selection > ul > li:focus {background-color:#eee; outline:2px solid #005c95!important;}
+.aes-selection.aes-selected .aes-selection-header {background-color:#fff; border-color:#ccc; border-bottom-color:#fff; margin-bottom:-1px;}
+
+/* messages */
+.aes-contacts .aes-contacts-message p {background-color:#fff; border-bottom:1px solid #ddd; font-size:0.75em; padding:10px;}
+.aes-contacts .aes-contacts-message-error p {background-color:#fffcdc;}
+
+/* group module */
+.aes-contacts .aes-group-module {overflow:hidden; background-color:#fff; border-bottom:1px solid #ddd; height:40px; padding-left:5px;}
+.aes-contacts .aes-group-module .aes-selection .aes-selection-header {font-size:.75em; font-weight:bold; margin-top:2px; padding:8px 7px;}
+.aes-contacts .aes-group-module .aes-selection h2,
+.aes-contacts .aes-group-module .aes-selection > ul {font-size:.75em;}
+.aes-contacts .aes-group-module .aes-selection > ul {min-width:15em;}
+.aes-contacts .aes-group-module button.aes-search {cursor:pointer; float:right; margin:11px 9px 10px;}
+
+/* search */
+.aes-contacts .aes-search-contact {background-color:#fff; border-bottom:1px solid #ddd; padding:5px 15px 5px 5px; position:relative; z-index:1001;}
+.aes-contacts .aes-search-contact > label {display:block; height:0; overflow:hidden; margin:0; padding:0; width:0;}
+.aes-contacts .aes-search-contact > input {border:1px solid #ddd; display:block; font-size:.875em; height:auto; padding:6px; width:100%;}
+.aes-contacts .aes-search-contact > input:-moz-placeholder {font-style:italic;}
+.aes-contacts .aes-search-contact > input:-ms-input-placeholder {font-style:italic;}
+.aes-contacts .aes-search-contact > input::-webkit-input-placeholder {font-style:italic;}
+.aes-contacts .aes-search-contact > .aes-close {cursor:pointer; position:absolute; height:16px; width:16px; right:10px; top:13px; z-index:1001;}
+
+/* contacts list */
+.aes-contacts .aes-list h2 {color:#333; display:inline-block; font-size:.875em; font-weight:normal; margin:0;
+	*display:inline;
+	zoom:1;
+}
+.aes-contacts .aes-list .aes-user-presence-text {color:#6f6f6f; font-style: italic; line-height:normal;}
+.aes-contacts .aes-list p.aes-user-presence-text {color:#666; font-size:0.6875em; font-style: normal;}
+.aes-contacts .aes-list section > ul {margin:0;}
+.aes-contacts .aes-list .aes-contacts-list .aes-user.select-only > div.user-select {display:inline-block; min-width:20px; margin-top:7px;}
+.aes-contacts .aes-list .aes-contacts-list .aes-user > img {float:left; margin-right:8px;}
+.aes-contacts .aes-list .aes-contacts-list .aes-user.select-only > img {float:none;}
+.aes-contacts .aes-list .aes-contacts-list > h4 {border-top:2px solid #ccc; color:#666; font-size:0.75em; margin:10px 15px 0; padding:10px 0 5px; text-transform:uppercase;}
+.aes-contacts .aes-list .aes-contacts-list > h4:first-child {border-top:none; margin-top:0;}
+.aes-contacts .aes-list .aes-contacts-list > .aes-pets-messages > a.aes-search-button {border:1px solid #ccc; border-bottom-color:#aaa; color:#000; cursor:pointer; display:inline-block; font-size:1.10em; margin-top:10px; padding:5px 10px; font-style:normal;
+	*display:inline;
+	zoom:1;
+	text-shadow:0 1px 0 #fff;
+	-moz-text-shadow:0 1px 0 #fff;
+	-webkit-text-shadow:0 1px 0 #fff;
+	-o-text-shadow:0 1px 0 #fff;
+	border-radius:2px;
+	-moz-border-radius:2px;
+	-webkit-border-radius:2px;
+	-o-border-radius:2px;
+	-khtml-border-radius:2px; /* for old Konqueror browsers */
+	background:-moz-linear-gradient(left top, #f7f7f7 1%, #eee 100%) repeat 0 0 transparent;
+	background:-webkit-linear-gradient(left top, #f7f7f7 1%, #eee 100%) repeat 0 0 transparent;
+	background:-o-linear-gradient(left top, #f7f7f7 1%, #eee 100%) repeat 0 0 transparent;
+}
+.aes-contacts .aes-list .aes-search-match {background-color:#ff6; color:#000; text-decoration:underline;}
+
+/* user row */
+.aes-contacts .aes-list .aes-user {padding:5px 10px; position:relative;}
+.aes-contacts .aes-list .aes-user input.user-select:focus {outline:2px solid #005c95;}
+.aes-contacts .aes-list .aes-user > img {float:none; width:25px;}
+.aes-contacts .aes-list .aes-user > img,
+.aes-contacts .aes-list .aes-user > div.aes-user-info {display:inline-block; vertical-align:top;
+	*display:inline;
+	zoom:1;
+}
+.aes-contacts .aes-list .aes-user > div.aes-user-info {max-width:140px; padding-left:15px; position:relative}
+.aes-contacts .aes-list .aes-user > div.aes-user-info .aes-presence {left:0; position:absolute; top:2px;}
+.aes-contacts .aes-list .aes-user > div.aes-user-info > h2,
+.aes-contacts .aes-list .aes-user > div.aes-user-info > p.aes-user-presence-text,
+.aes-contacts .aes-list .aes-user > div.aes-user-info > .aes-user-links {overflow:hidden; text-overflow:ellipsis; width:130px; white-space:nowrap;}
+.aes-contacts .aes-list .aes-user.select-only > div.aes-user-info > h2 {width:170px;}
+.aes-contacts .aes-list .aes-user > div.aes-user-info > h2 {line-height:120%;}
+.aes-contacts .aes-list .aes-user > div.aes-user-info > p.aes-user-presence-text,
+.aes-contacts .aes-list .aes-user > div.aes-user-info > .aes-user-links {height:20px;}
+.aes-contacts .aes-list .aes-user > div.aes-user-info > .aes-user-links > ul > li {display:inline-block; padding-right:3px;}
+.aes-contacts .aes-list .aes-user > div.aes-user-info > .aes-user-links > ul > li + li {border-left:#353535 solid 1px; padding-left:3px;}
+.aes-contacts .aes-list .aes-user > div.aes-user-info > .aes-user-links > ul > li > a {color:#005c95;}
+.aes-contacts .aes-list .aes-user > div.aes-user-info > .aes-user-links{}
+.aes-contacts .aes-list .aes-user > div.aes-user-info > .aes-user-links {font-size:0.6875em; line-height:normal;}
+.aes-contacts .aes-list .aes-user > div.aes-user-info > .aes-user-links li {line-height:normal;}
+.aes-contacts .aes-list .aes-user div.aes-pets-icon,
+.aes-contacts .aes-list .aes-user .aes-pets-icon-button {opacity:0; right:5px; position:absolute; top:2px;}
+.aes-contacts .aes-list .aes-user div.aes-pets-icon:hover,
+.aes-contacts .aes-list .aes-user .aes-pets-icon-button:hover,
+.aes-contacts .aes-list .aes-user .aes-pets-icon-button:focus {opacity:1;}
+
+html.mobileSafari .aes-contacts .aes-list .aes-user > div.aes-user-info > .aes-user-links,
+html.mobileSafari .aes-contacts .aes-list .aes-user > .aes-pets-icon {display:block}
+
+.aes-contacts .aes-list .aes-user:hover > div.aes-user-info > h2,
+.aes-contacts .aes-list .aes-user:focus > div.aes-user-info > h2
+{}
+.aes-contacts .aes-list .aes-user:hover > div.aes-user-info > p.aes-user-presence-text,
+.aes-contacts .aes-list .aes-user:focus > div.aes-user-info > p.aes-user-presence-text
+{}
+html.mobileSafari .aes-contacts .aes-list .aes-user > div.aes-user-info > p.aes-user-presence-text {display:block;}
+.aes-contacts .aes-list .aes-user:hover > div.aes-user-info > p.aes-user-presence-text.nohide,
+.aes-contacts .aes-list .aes-user:focus > div.aes-user-info > p.aes-user-presence-text.nohide
+{display:block;}
+.aes-contacts .aes-list .aes-user:hover > div.aes-user-info > .aes-user-links,
+.aes-contacts .aes-list .aes-user:focus > div.aes-user-info > .aes-user-links {}
+.aes-contacts .aes-list .aes-user:hover div.aes-pets-icon,
+.aes-contacts .aes-list .aes-user:hover .aes-pets-icon-button,
+.aes-contacts .aes-list .aes-user:focus div.aes-pets-icon,
+.aes-contacts .aes-list .aes-user:focus .aes-pets-icon-button {opacity:1;}
+
+.aes-contacts .aes-list .aes-user:hover > div.aes-user-friendable > h2,
+.aes-contacts .aes-list .aes-user:hover > div.aes-user-friendable > p.aes-user-presence-text,
+.aes-contacts .aes-list .aes-user:hover > div.aes-user-friendable > .aes-user-links,
+.aes-contacts .aes-list .aes-user:focus > div.aes-user-friendable > h2,
+.aes-contacts .aes-list .aes-user:focus > div.aes-user-friendable > p.aes-user-presence-text,
+.aes-contacts .aes-list .aes-user:focus > div.aes-user-friendable > .aes-user-links
+{width:110px;}
+
+.aes-contacts .aes-list .aes-user.aes-user-disabled {cursor:default;}
+.aes-contacts .aes-list .aes-user.aes-user-disabled img,
+.aes-contacts .aes-list .aes-user.aes-user-disabled h2 {opacity:0.75; filter: alpha(opacity = 75);}
+
+/* footer */
+.aes-contacts .aes-footer-inner form.aes-flyout {width:10.5em;}
+.aes-contacts .aes-footer-inner form.aes-flyout div.aes-checkbox {margin-top:10px;}
+.aes-contacts .aes-footer-inner form.aes-flyout div.aes-checkbox:first-child {margin-top:0;}
+
+/****************************************************
+	header tools
+****************************************************/
+#aes-pets-contacts-statusmessage #aes-contacts-statusmessage-header #aes-contacts-statusmessage-header-text {
+	background-image: url(/te/pets-client-core/2.6.0/public/img/arrow_down_white_alpha_small.png); background-position: right center; background-repeat: no-repeat;  margin-right: 12px; padding: 10px;
+	overflow:hidden; text-overflow:ellipsis; width:60px; white-space:nowrap;
+}
+#aes-pets-contacts-statusmessage .aes-dropdown-content {padding:10px; width:300px;}
+#aes-pets-contacts-statusmessage .aes-dropdown-content .aes-status-input-wrapper {padding-right:6px;}
+#aes-pets-contacts-statusmessage .aes-dropdown-content .aes-status-input-wrapper textarea {font-size:.75em; height:3.5em; padding:3px; resize:none; width:100%;}
+#aes-pets-contacts-statusmessage .aes-dropdown-content .aes-form-buttons {margin-top:3px;}
+#aes-pets-contacts-statusmessage .aes-dropdown-content .aes-form-buttons > span {float:right; font-size:.75em; margin-top:5px;}
+#aes-pets-contacts-statusmessagecontrol div{margin:0;padding:0}
+#aes-pets-contacts-statusmessagecontrol input,
+#aes-pets-contacts-statusmessagecontrol textarea,
+#aes-pets-contacts-statusmessagecontrol select{font-family:inherit;font-size:inherit;font-weight:inherit;*font-size:100%}
+#aes-pets-contacts-statusmessagecontrol input[type=text],
+#aes-pets-contacts-statusmessagecontrol input[type=password],
+#aes-pets-contacts-statusmessagecontrol textarea{width:12.25em;*width:11.9em}
+
+/****************************************************
+	contact widget
+****************************************************/
+.aes-pets-contacts-button {
+	background: #ededed;
+	/*fallback for non-CSS3 browsers*/
+	background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #ededed), color-stop(1, #dddddd));
+	/*old webkit*/
+	background: -ms-linear-gradient(bottom, #ededed, #dddddd);
+	/*new webkit*/
+	background: -moz-linear-gradient(center bottom, #ededed 0%, #dddddd 100%);
+	/*gecko*/
+	background: -o-linear-gradient(#ededed, #dddddd);
+	/*opera 11.10+*/
+	background: linear-gradient(#ededed, #dddddd);
+	/*future CSS3 browsers*/
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#ededed', endColorstr = '#dddddd', GradientType = 0);
+	/*IE*/
+	/*-pie-background: linear-gradient(@start, @stop);*/
+	/*PIE*/
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	-ms-border-radius: 2px;
+	-o-border-radius: 2px;
+	border-radius: 2px;
+	border: 1px solid #999999;
+	width: 34px;
+	height: 32px;
+	text-align: center;
+	-webkit-box-shadow: 0px 1px 1px 0px rgba(255, 255, 255, 0.7) inset;
+	-moz-box-shadow: 0px 1px 1px 0px rgba(255, 255, 255, 0.7) inset;
+	box-shadow: 0px 1px 1px 0px rgba(255, 255, 255, 0.7) inset;
+	margin-right: 5px;
+	position: relative;
+	float: left;
+	z-index: 0;
+}
+.aes-pets-contacts-button .aes-pets-contacts-presence {
+	display: block;
+	width: 7px;
+	height: 7px;
+	border: 1px solid #ffffff;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	-ms-border-radius: 2px;
+	-o-border-radius: 2px;
+	border-radius: 2px;
+	position: absolute;
+	z-index: 1;
+	bottom: 1px;
+	right: 1px;
+}
+.aes-pets-contacts-button .aes-user-offline {
+	background-color: grey;
+}
+.aes-pets-contacts-button .aes-user-away {
+	background-color: yellow;
+}
+.aes-pets-contacts-button .aes-user-busy {
+	background-color: red;
+}
+.aes-pets-contacts-button .aes-user-online {
+	background-color: #009c24;
+}
+.aes-pets-contacts-icon-friend {
+	display: inline-block;
+	*margin-right: .3em;
+	line-height: 30px;
+	height: 30px;
+	width: 30px;
+	background-image: url(/te/pets-client-chat/1.10.0/public/img/aes-icon-chat-grid.png);
+	vertical-align: text-bottom;
+	margin: 0;
+	background-position: -60px -0px;
+	background-repeat: no-repeat;
+}
+.aes-user-friendrequested .aes-pets-contacts-icon-friend {
+	background-position: -60px -90px;
+}
+.aes-disabled .aes-pets-contacts-icon-friend {
+	background-image: url(/te/pets-client-chat/1.10.0/public/img/aes-icon-chat-grid-disabled.png);
+}
+.aes-pets-contacts-icon-chat {
+	display: inline-block;
+	*margin-right: .3em;
+	line-height: 30px;
+	height: 30px;
+	width: 30px;
+	background-image: url(/te/pets-client-chat/1.10.0/public/img/aes-icon-chat-grid.png);
+	vertical-align: text-bottom;
+	margin: 0;
+	background-position: -60px -60px;
+	background-repeat: no-repeat;
+}
+.aes-disabled .aes-pets-contacts-icon-chat {
+	background-image: url(/te/pets-client-chat/1.10.0/public/img/aes-icon-chat-grid-disabled.png);
+}
